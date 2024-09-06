@@ -17,18 +17,18 @@ export default function Projects() {
             h3Text="Vantablack portfolio"
           />
           <ProjectItem
-            link="https://llvs9g-8080.csb.app/"
-            imgClass="project-2"
-            spanText="Photo Gallery"
-            h3Text="Artsense gallery v1.0"
-          />
-        </div>
-        <div className="project-list-right">
-          <ProjectItem
             link="https://www.figma.com/design/AIxk93Bhw0tdkwpQ5MFVQS/Ecommerce---Kronos?node-id=0-1&t=Gla0ppj60NeuBXXi-1"
             imgClass="project-3"
             spanText="Figma Project"
             h3Text="Kronos luxury watch e-shop"
+          />
+        </div>
+        <div className="project-list-right">
+          <ProjectItem
+            link="https://vanta-black-gallery.vercel.app/"
+            imgClass="project-2"
+            spanText="Photo Gallery"
+            h3Text="Vantablack gallery"
           />
         </div>
       </div>

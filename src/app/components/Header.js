@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { NeutralFace, NeutralFaceBold } from "./fonts"; // Import the font from the separate file
+import { NeutralFace, NeutralFaceBold } from "./fonts";
 
 export default function Header() {
   useEffect(() => {

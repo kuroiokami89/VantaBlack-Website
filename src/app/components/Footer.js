@@ -1,6 +1,6 @@
 "use client";
 
-import { NeutralFace, NeutralFaceBold } from "./fonts"; // Import the font from the separate file
+import { NeutralFace, NeutralFaceBold } from "./fonts";
 
 export default function Footer() {
   return (
