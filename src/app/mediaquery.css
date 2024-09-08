@@ -198,13 +198,13 @@
     margin: 0;
     padding: 0;
     height: 100vh !important;
-    gap: 60px;
+    gap: 55px;
   }
 
   .footer-socials {
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
+    row-gap: 35px;
   }
 
   .email {
