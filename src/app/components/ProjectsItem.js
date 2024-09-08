@@ -1,10 +1,38 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
 
-// ProjectItem.js
+// Register ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
 export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    const el = projectRef.current;
+
+    gsap.fromTo(
+      el,
+      { opacity: 0, y: 100 }, // Start with the element 50px down and hidden
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%", // Start when the top of the element reaches 80% of the viewport height
+          end: "bottom 20%", // End when the bottom of the element reaches 20% of the viewport height
+          toggleActions: "play none none none", // Play the animation on scroll in, do nothing else
+        },
+      }
+    );
+  }, []);
+
   return (
     <a href={link}>
-      <div className="project">
+      <div ref={projectRef} className="project">
         <div className={`project-img ${imgClass}`}></div>
         <div className="project-text">
           <span className={`${NeutralFace.className}`}>{spanText}</span>

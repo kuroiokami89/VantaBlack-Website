@@ -1,13 +1,42 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
+  const footertRef = useRef(null);
+
+  useEffect(() => {
+    const el = footertRef.current;
+
+    gsap.fromTo(
+      el,
+      { opacity: 0, y: 200 }, // Start with the element 50px down and hidden
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.7,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%", // Start when the top of the element reaches 80% of the viewport height
+          end: "bottom 20%", // End when the bottom of the element reaches 20% of the viewport height
+          toggleActions: "play none none none", // Play the animation on scroll in, do nothing else
+        },
+      }
+    );
+  }, []);
+
   return (
     <footer
       id="footer"
       style={{ margin: "0 30px" }}
       className={`${NeutralFace.className}`}
+      ref={footertRef}
     >
       <span style={{ color: "rgba(255, 255, 255, 0.45)", fontSize: "1.65rem" }}>
         INTERESTED IN MY PROJECTS ?
