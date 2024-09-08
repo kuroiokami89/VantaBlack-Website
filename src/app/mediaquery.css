@@ -186,6 +186,7 @@
   .about-container {
     flex-direction: column;
     margin-top: 50px;
+    gap: 50px;
   }
 
   .about-title-container h2 {
@@ -197,7 +198,7 @@
     margin: 0;
     padding: 0;
     height: 100vh !important;
-    gap: 90px;
+    gap: 60px;
   }
 
   .footer-container {
@@ -218,7 +219,7 @@
 
   .social-links {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
   }
 
   #footer span {
