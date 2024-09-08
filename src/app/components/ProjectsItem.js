@@ -14,11 +14,11 @@ export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
 
     gsap.fromTo(
       el,
-      { opacity: 0, y: 200 }, // Start with the element 50px down and hidden
+      { opacity: 0, y: 350 }, // Start with the element 50px down and hidden
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 1.85,
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
@@ -31,8 +31,8 @@ export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
   }, []);
 
   return (
-    <a href={link}>
-      <div ref={projectRef} className="project">
+    <a href={link} className="project">
+      <div ref={projectRef}>
         <div className={`project-img ${imgClass}`}></div>
         <div className="project-text">
           <span className={`${NeutralFace.className}`}>{spanText}</span>

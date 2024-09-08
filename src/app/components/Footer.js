@@ -45,29 +45,32 @@ export default function Footer() {
         <a
           href="mailto:sergioallushaj@gmail.com"
           id="emailLink"
-          className={`email ${NeutralFaceBold.className}`}
+          className={`link-btn email ${NeutralFaceBold.className}`}
         >
           LET'S TALK
         </a>
       </div>
       <div className="social-links">
-        <a href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/">
+        <a
+          className="link-btn"
+          href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
+        >
           LINKEDIN
         </a>
-        <a className="link" href="https://github.com/kuroiokami89">
+        <a className="link-btn link" href="https://github.com/kuroiokami89">
           GITHUB
         </a>
         <a
           href="/ALLUSHAJ-SERGIO-(ITA).pdf"
           download="ALLUSHAJ SERGIO CV ITA.pdf"
-          className="link"
+          className="link-btn link"
         >
           DOWNLOAD.CV ITA
         </a>
         <a
           href="/ALLUSHAJ -SERGIO-CV-2024.pdf"
           download="ALLUSHAJ SERGIO CV 2024.pdf"
-          className="link"
+          className=" link-btn link"
         >
           DOWNLOAD.CV ENG
         </a>

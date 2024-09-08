@@ -19,7 +19,7 @@ export default function Intro() {
     gsap.fromTo(
       el,
       { opacity: 0 }, // Initial state (hidden)
-      { opacity: 1, duration: 3, ease: "power2.out", delay: 0.5 } // Fade in with slight delay
+      { opacity: 1, duration: 2.5, ease: "power2.out", delay: 0.5 } // Fade in with slight delay
     );
   }, []);
 

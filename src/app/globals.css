@@ -48,7 +48,10 @@ body {
 }
 
 /** Inizio Stili Globali **/
-a,
+a {
+  text-decoration: none;
+}
+
 .link-btn {
   font-size: 1.25rem;
   font-weight: 100;
@@ -56,15 +59,11 @@ a,
   position: relative;
   text-decoration: none;
   transition: color 0.65s ease-in-out;
+  cursor: pointer;
 }
 
-a:hover,
 .link-btn:hover {
   color: rgba(255, 255, 255, 0.45);
-}
-
-.link-btn {
-  cursor: pointer;
 }
 
 p {
@@ -258,18 +257,18 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 40px; /* Adjust if necessary */
 }
 
 .project-list-left,
 .project-list-right {
   display: flex;
   flex-direction: column;
-  row-gap: 200px;
+  row-gap: 100px; /* Adjust as needed */
 }
 
 .project-list-right {
-  margin-top: 400px;
+  margin-top: 400px; /* Adjust if necessary */
 }
 
 #projects .title-work {
@@ -301,12 +300,12 @@ p {
 
 .project {
   background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0.5 !important;
+  opacity: 0.5; /* Removed !important */
   transition: opacity 0.8s ease-in-out;
 }
 
 .project:hover {
-  opacity: 1 !important;
+  opacity: 1; /* Removed !important */
 }
 
 .project-1 {
@@ -320,6 +319,9 @@ p {
 .project-3 {
   background-image: url("./assets/foto/Kronos-Ecommerce.jpg");
 }
+
+/* Exclude specific styling inside the #projects section */
+
 /** FINE STILE PROJECTS **/
 
 .hover-image {

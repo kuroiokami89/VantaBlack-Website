@@ -33,17 +33,17 @@ export default function Header() {
   return (
     <header id="header" className={`${NeutralFace.className}`}>
       <div className="header-container blocco">
-        <a id="logo" href="#top">
+        <a id="logo" className="link-btn" href="#top">
           vantaBlack
         </a>
         <div className="header-anchors">
-          <a className="link" href="#projects">
+          <a className="link link-btn" href="#projects">
             PROJECTS
           </a>
-          <a className="link" href="#about">
+          <a className="link link-btn" href="#about">
             ABOUT
           </a>
-          <a className="link" href="#footer">
+          <a className="link link-btn" href="#footer">
             CONTACT
           </a>
         </div>

@@ -1,4 +1,3 @@
-// Projects.js
 import ProjectItem from "./ProjectsItem";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
 
