@@ -159,13 +159,6 @@ p {
   width: 17px;
   margin-left: 10px;
 }
-
-#intro p {
-  font-size: 1.4rem;
-  margin-left: 10px;
-  font-weight: 100;
-  text-transform: uppercase;
-}
 /** FINE STILE INTRO **/
 
 /** INIZIO STILE ABOUT **/
@@ -253,17 +246,13 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 35px;
-  gap: 15px;
+  gap: 4px;
 }
 
 .project-text span {
   color: rgba(255, 255, 255, 0.65);
   font-size: 1.15rem;
   margin-bottom: 7px;
-}
-
-.project-text a {
-  width: fit-content;
 }
 
 .project-img {
