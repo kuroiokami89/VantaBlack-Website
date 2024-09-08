@@ -14,11 +14,11 @@ export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
 
     gsap.fromTo(
       el,
-      { opacity: 0, y: 100 }, // Start with the element 50px down and hidden
+      { opacity: 0, y: 200 }, // Start with the element 50px down and hidden
       {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 1.5,
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
