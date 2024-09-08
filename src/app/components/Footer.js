@@ -19,7 +19,7 @@ export default function Footer() {
       {
         opacity: 1,
         y: 0,
-        duration: 2,
+        duration: 3,
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
