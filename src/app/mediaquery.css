@@ -1,15 +1,6 @@
 @media screen and (max-width: 1750px) {
-  .header-bottom {
-    padding: 0;
-    justify-content: center;
-  }
-
   .project-container {
     column-gap: 0;
-  }
-
-  .work-list {
-    margin-right: 0;
   }
 }
 
@@ -17,11 +8,6 @@
   .blocco,
   #footer {
     margin: 0 5%;
-  }
-
-  #works {
-    width: 100%;
-    height: 100%;
   }
 
   .project-list {
@@ -95,10 +81,6 @@
     row-gap: 100px;
   }
 
-  #works {
-    padding: 50px 30px;
-  }
-
   .header-links img {
     max-width: 43px;
   }
@@ -165,10 +147,6 @@
     font-size: 1.3rem;
   }
 
-  #about br {
-    display: none;
-  }
-
   .blocco {
     margin-bottom: 150px !important;
     margin: 0 30px;
@@ -189,18 +167,16 @@
     margin: 0 !important;
   }
 
+  #about br {
+    display: none;
+  }
+
   #footer {
     text-align: center;
     margin: 0;
     padding: 0;
     height: 100vh !important;
     gap: 55px;
-  }
-
-  .footer-socials {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 35px;
   }
 
   .email {
