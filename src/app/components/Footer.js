@@ -61,15 +61,15 @@ export default function Footer() {
           GITHUB
         </a>
         <a
-          href="/ALLUSHAJ-SERGIO-(ITA).pdf"
+          href="/CV ALLUSHAJ SERGIO.pdf"
           download="ALLUSHAJ SERGIO CV ITA.pdf"
           className="link-btn link"
         >
           DOWNLOAD.CV ITA
         </a>
         <a
-          href="/ALLUSHAJ -SERGIO-CV-2024.pdf"
-          download="ALLUSHAJ SERGIO CV 2024.pdf"
+          href="/CV ALLUSHAJ SERGIO (ENG).pdf"
+          download="ALLUSHAJ SERGIO CV ENG.pdf"
           className=" link-btn link"
         >
           DOWNLOAD.CV ENG
