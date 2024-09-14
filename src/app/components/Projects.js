@@ -16,9 +16,9 @@ export default function Projects() {
             h3Text="Vantablack portfolio"
           />
           <ProjectItem
-            link="https://www.figma.com/design/AIxk93Bhw0tdkwpQ5MFVQS/Ecommerce---Kronos?node-id=0-1&t=Gla0ppj60NeuBXXi-1"
+            link="https://vanta-black-kronos.vercel.app/"
             imgClass="project-3"
-            spanText="Figma Project"
+            spanText="Ecommerce website"
             h3Text="Kronos luxury watch e-shop"
           />
         </div>
