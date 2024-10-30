@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 h1 {
-  font-size: 7rem;
-  line-height: 1;
+  font-size: 9rem;
+  line-height: 0.9;
 }
 
 h2 {
@@ -14,8 +14,22 @@ h3 {
   font-size: 25px !important;
 }
 
+p {
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.intro-container p {
+  font-size: 1rem;
+}
+
 a,
 .link-btn {
   color: white;
   background: transparent;
+}
+
+#services2 h3 {
+  font-size: 1.8rem !important;
 }

@@ -8,4 +8,12 @@ const NeutralFaceBold = localFont({
   src: "../fonts/NeutralFaceBold.ttf",
 });
 
-export { NeutralFace, NeutralFaceBold };
+const AvertaBold = localFont({
+  src: "../fonts/averta-bold.otf",
+});
+
+const TT = localFont({
+  src: "../fonts/TT-Hoves-Pro-Trial-Regular.ttf",
+});
+
+export { NeutralFace, NeutralFaceBold, AvertaBold, TT };

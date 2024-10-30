@@ -1,10 +1,43 @@
 import { useEffect, useRef } from "react";
+import styled from "styled-components";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
+
+const StyledProjectsItems = styled.div`
+  .project-img {
+    width: 840px;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    transition: opacity 0.8s ease-in-out;
+  }
+
+  .project {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.5;
+    transition: opacity 0.8s ease-in-out;
+  }
+
+  .project:hover {
+    opacity: 1;
+  }
+
+  .project-1 {
+    background-image: url("./assets/foto/Vanta-GIF.gif");
+  }
+
+  .project-2 {
+    background-image: url("./assets/foto/VB-Gallery.jpg");
+  }
+
+  .project-3 {
+    background-image: url("./assets/foto/Rolex-Sky-Dweller.gif");
+  }
+`;
 
 export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
   const projectRef = useRef(null);
@@ -31,14 +64,16 @@ export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
   }, []);
 
   return (
-    <a href={link} className="project">
-      <div ref={projectRef}>
-        <div className={`project-img ${imgClass}`}></div>
-        <div className="project-text">
-          <span className={`${NeutralFace.className}`}>{spanText}</span>
-          <h3 className={`${NeutralFaceBold.className}`}>{h3Text}</h3>
+    <StyledProjectsItems className="project">
+      <a href={link}>
+        <div ref={projectRef}>
+          <div className={`project-img ${imgClass}`}></div>
+          <div className="project-text">
+            <span className={`${NeutralFace.className}`}>{spanText}</span>
+            <h3 className={`${NeutralFaceBold.className}`}>{h3Text}</h3>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </StyledProjectsItems>
   );
 }

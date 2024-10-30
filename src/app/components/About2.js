@@ -22,13 +22,29 @@ export default function About2() {
           </div>
           <img id="about-image" src="/Me.jpg" alt="Sergio Allushaj" />
         </div>
-        <p>
-          With nearly two years of experience in front-end development, <br />
-          I have gained expertise in HTML, CSS, JavaScript, and Next.js. <br />{" "}
-          <br />I focus on creating modern, responsive, and highly functional
-          websites that offer a unique design and an exceptional user
-          experience.
-        </p>
+        <div className="text-container">
+          <h3 className={`${NeutralFaceBold.className}`}>ABOUT ME</h3>
+          <p>
+            I specialize in front-end development with experience in HTML, CSS,
+            JavaScript and Next js. I focus on creating modern, responsive, and
+            highly functional websites that offer a unique design and an
+            exceptional user experience.
+          </p>
+          <a
+            href="/CV ALLUSHAJ SERGIO.pdf"
+            download="ALLUSHAJ SERGIO CV ITA.pdf"
+            className="link-btn link"
+          >
+            DOWNLOAD.CV ITA
+          </a>
+          <a
+            href="/CV ALLUSHAJ SERGIO (ENG).pdf"
+            download="ALLUSHAJ SERGIO CV ENG.pdf"
+            className=" link-btn link"
+          >
+            DOWNLOAD.CV ENG
+          </a>
+        </div>
       </div>
     </div>
   );
