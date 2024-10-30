@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "./globals.css";
-import "./mediaquery.css";
-import "./fonts.css";
+import "./globals.css"; // Ensure this contains your base styles
+import "./mediaquery.css"; // Add any responsive styles
+import "./fonts.css"; // Include your font styles
 import HeadComponent from "./components/HeadComponent";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,12 +13,11 @@ export default function RootLayout({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fallback to hide loading screen after 5 seconds, in case the video takes too long to load
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Adjust the time based on your video length or preference
+    }, 5000); // Adjust this value as needed
 
-    return () => clearTimeout(timeout); // Clean up timeout if loading finishes earlier
+    return () => clearTimeout(timeout);
   }, []);
 
   const handleLoaded = () => {
@@ -29,7 +28,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <HeadComponent />
       <body>
-        {/* DECOMMENT TO ENABLE LOADING VIDEO*/}
         {/* {loading ? (
           <LoadingVideo onLoaded={handleLoaded} />
         ) : (

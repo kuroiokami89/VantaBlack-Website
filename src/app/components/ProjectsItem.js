@@ -25,18 +25,6 @@ const StyledProjectsItems = styled.div`
   .project:hover {
     opacity: 1;
   }
-
-  .project-1 {
-    background-image: url("./assets/foto/Vanta-GIF.gif");
-  }
-
-  .project-2 {
-    background-image: url("./assets/foto/VB-Gallery.jpg");
-  }
-
-  .project-3 {
-    background-image: url("./assets/foto/Rolex-Sky-Dweller.gif");
-  }
 `;
 
 export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
@@ -64,16 +52,14 @@ export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
   }, []);
 
   return (
-    <StyledProjectsItems className="project">
-      <a href={link}>
-        <div ref={projectRef}>
-          <div className={`project-img ${imgClass}`}></div>
-          <div className="project-text">
-            <span className={`${NeutralFace.className}`}>{spanText}</span>
-            <h3 className={`${NeutralFaceBold.className}`}>{h3Text}</h3>
-          </div>
+    <a href={link} className="project">
+      <StyledProjectsItems ref={projectRef}>
+        <div className={`project-img ${imgClass}`}></div>
+        <div className="project-text">
+          <span className={`${NeutralFace.className}`}>{spanText}</span>
+          <h3 className={`${NeutralFaceBold.className}`}>{h3Text}</h3>
         </div>
-      </a>
-    </StyledProjectsItems>
+      </StyledProjectsItems>
+    </a>
   );
 }

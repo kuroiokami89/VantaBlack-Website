@@ -40,10 +40,6 @@
   .email {
     font-size: 12rem;
   }
-
-  #about {
-    margin-bottom: 0 !important;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -150,25 +146,6 @@
   .blocco {
     margin-bottom: 150px !important;
     margin: 0 20px;
-  }
-
-  #about {
-    margin-top: 0;
-    margin-bottom: 150px !important;
-  }
-
-  .about-container {
-    flex-direction: column;
-    margin-top: 50px;
-    gap: 30px;
-  }
-
-  .about-title-container h2 {
-    margin: 0 !important;
-  }
-
-  #about br {
-    display: none;
   }
 
   #footer {

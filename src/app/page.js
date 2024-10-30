@@ -2,16 +2,14 @@
 
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
-import About2 from "./components/About2";
-import Services2 from "./components/Services2";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
     <>
       <Intro />
-      <Services2 />
+      <Services />
       <Projects />
-      <About2 />
     </>
   );
 }

@@ -36,12 +36,12 @@ export default function Header() {
   return (
     <header id="header" className={`${NeutralFace.className}`}>
       <div className="header-container blocco">
-        <a href="#top">VANTABLACK</a>
+        <a href="/">VANTABLACK</a>
         <LocalTime />
         <div id="menu">
           <a href="#services">SERVICES</a>
           <a href="#projects">PROJECTS</a>
-          <a href="#about">ABOUT</a>
+          <a href="/about">ABOUT</a>
           <a href="#footer">CONTACT</a>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function Header() {
         <a className="link link-btn" href="#projects">
           PROJECTS
         </a>
-        <a className="link link-btn" href="#about">
+        <a className="link link-btn" href="/about">
           ABOUT
         </a>
         <a className="link link-btn" href="#footer">
