@@ -32,26 +32,17 @@ export default function Intro() {
     >
       <div className="intro-container">
         <div className="homepage-title">
-          {/* <h1>VANTABLACK</h1>
-          <h1>WEB DEVELOPER</h1>
-          <h1>BASED IN ITALY</h1> */}
           <h1 className="title">VANTABLACK</h1>
         </div>
         <p className={`${NeutralFace.className}`}>
-          I focus on creating modern, responsive, and highly functional websites
-          that offer a unique design and an exceptional user experience.
+          I aim to create modern, responsive websites that offer unique designs
+          and exceptional user experiences. Alongside front-end development, I
+          utilize my Adobe expertise in Photoshop, Illustrator, and After
+          Effects for professional graphic design and dynamic animations.
         </p>
-        <div className="socials">
-          <a
-            className="link-btn"
-            href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
-          >
-            LINKEDIN
-          </a>
-          <a className="link-btn link" href="https://github.com/kuroiokami89">
-            GITHUB
-          </a>
-        </div>
+        <a href="#projects" className={`${NeutralFace.className}`}>
+          FEATURED PROJECTS (3)
+        </a>
       </div>
     </div>
   );

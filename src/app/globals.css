@@ -297,7 +297,7 @@ a {
 }
 
 .project-2 {
-  background-image: url("./assets/foto/VB-Gallery.jpg");
+  background-image: url("./assets/foto/project-3.jpg");
 }
 
 .project-3 {
@@ -351,6 +351,8 @@ a {
   background-size: contain;
   position: relative;
   display: flex;
+  flex-direction: column;
+  gap: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -374,4 +376,8 @@ a {
   width: 30%;
   color: white; /* Ensure text is visible */
   text-align: justify; /* Optional for better text layout */
+}
+
+#about a {
+  width: 20%;
 }

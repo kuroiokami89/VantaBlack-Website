@@ -16,7 +16,7 @@ export default function Footer() {
           marginBottom: "0 !important",
         }}
       >
-        WANT TO GET IN CONTACT? YOU CAN FIND ME ON THE FOLLOWING SOCIALS
+        WANT TO GET IN CONTACT?
       </span>
       <div className="section-title" style={{ position: "relative" }}>
         <a
@@ -35,7 +35,7 @@ export default function Footer() {
             marginBottom: "15px",
           }}
         >
-          DEVELOPED AND DESIGNED BY ©VANTABLACK
+          DEVELOPED BY ©VANTABLACK
         </span>
         <div className="socials">
           <a

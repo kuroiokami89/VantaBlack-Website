@@ -109,7 +109,6 @@ export default function Services() {
     <StyledServices id="services2" className={`${NeutralFace.className}`}>
       <div className="skill skill-title">
         <h3>My skills</h3>
-        <p>dqwfqwfqwe fwe fewgfwefg we egewweg gh reg re</p>
       </div>
       <div className="skill skill-1">
         <h3>Front-end development</h3>

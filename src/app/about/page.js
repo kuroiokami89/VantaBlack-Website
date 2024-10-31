@@ -6,16 +6,22 @@ export default function About() {
   return (
     <div id="about" className={`${NeutralFace.className}`}>
       <p>
-        Embarking on my journey in 2017, I initially delved into the world of UI
-        design. However, my path soon evolved as my passion for design & digital
-        art flourished. Today, as an independent designer, I blend together
-        expertise in design, development & 3D to craft effective & innovative
-        solutions. At the intersection of effective design and visual artistry,
-        diverge two distinct paths. On one side, I craft interfaces and web
-        designs for brands and companies, striving to achieve meaningful
-        outcomes. On the other, I produce visual art for musicians and public
-        figures, infusing each piece with metaphorical narratives.
+        I'm Sergio Allushaj, a front-end developer from Italy. I began my
+        journey in front-end development with the goal of creating modern,
+        responsive, and highly functional websites. In recent years, my
+        interests have evolved to include UX/UI and graphic design, blending
+        creativity with technology. Today, as an independent developer, I apply
+        my skills in HTML, CSS, and JavaScript, complemented by knowledge in
+        Adobe software and prototyping with Figma, to craft innovative and
+        visually engaging solutions.
       </p>
+
+      <a className="link-btn link" href="/CV ALLUSHAJ SERGIO.pdf" download>
+        DOWNLOAD CV (ITA)
+      </a>
+      <a className="link-btn link" href="/">
+        RETURN TO HOMEPAGE
+      </a>
     </div>
   );
 }

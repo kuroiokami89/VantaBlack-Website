@@ -9,6 +9,7 @@ export default function Header() {
 
   const toggleOverlay = () => {
     setIsOverlayOpen((prev) => !prev);
+    document.body.style.overflow = isOverlayOpen ? "auto" : "hidden"; // Prevent body scroll when overlay is open
   };
 
   useEffect(() => {
@@ -24,10 +25,8 @@ export default function Header() {
       header.style.webkitBackdropFilter = isScrolled ? "blur(10px)" : "none";
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup function to remove event listeners
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -47,7 +46,22 @@ export default function Header() {
       </div>
 
       {/* Overlay */}
-      <div className={`overlay ${isOverlayOpen ? "open" : ""}`}>
+      <div
+        className={`overlay ${isOverlayOpen ? "open" : ""}`}
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          overflow: "hidden",
+          display: isOverlayOpen ? "flex" : "none", // Hide when not open
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "rgba(0, 0, 0, 0.8)", // Adjust overlay color if needed
+          zIndex: 1000, // Ensure overlay is above other content
+        }}
+      >
         <a className="close-toggle" onClick={toggleOverlay}>
           CLOSE
         </a>
