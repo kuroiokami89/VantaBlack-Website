@@ -147,10 +147,9 @@ a {
 #footer {
   font-size: 1.3rem;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: flex-start;
-  gap: 30px;
-  /* height: 100vh; */
+  margin-top: 200px;
 }
 
 #footer .section-title {
@@ -160,17 +159,17 @@ a {
 }
 
 #footer .section-title a {
-  font-size: 17rem;
+  font-size: 19rem;
 }
 
 .socials {
   display: flex;
-  flex-direction: column;
+  gap: 30px;
 }
 
 .email {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 18rem;
+  font-size: 25rem;
   width: fit-content;
   cursor: pointer;
 }
@@ -188,6 +187,8 @@ a {
 }
 
 .social-links {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0 !important;
 }
 /** FINE STILE FOOTER **/
@@ -271,6 +272,24 @@ a {
   color: rgba(255, 255, 255, 0.65);
   font-size: 1.15rem;
   margin-bottom: 7px;
+}
+
+.project-img {
+  width: 840px;
+  height: 750px;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.5;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.project:hover {
+  opacity: 1;
 }
 
 .project-1 {

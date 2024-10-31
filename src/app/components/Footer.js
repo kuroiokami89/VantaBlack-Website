@@ -1,51 +1,29 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
-  const footertRef = useRef(null);
-
-  useEffect(() => {
-    const el = footertRef.current;
-
-    gsap.fromTo(
-      el,
-      { opacity: 0, y: 200 }, // Start with the element 50px down and hidden
-      {
-        opacity: 1,
-        y: 0,
-        duration: 3,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80%", // Start when the top of the element reaches 80% of the viewport height
-          end: "bottom 20%", // End when the bottom of the element reaches 20% of the viewport height
-          toggleActions: "play none none none", // Play the animation on scroll in, do nothing else
-        },
-      }
-    );
-  }, []);
+  const footerRef = useRef(null);
 
   return (
-    <footer
-      id="footer"
-      style={{ margin: "0 30px" }}
-      className={`${NeutralFace.className}`}
-      ref={footertRef}
-    >
+    <footer id="footer" className={`${NeutralFace.className}`}>
       <div className="section-title" style={{ position: "relative" }}>
+        <span
+          className="blocco"
+          style={{ color: "rgba(255, 255, 255, 0.45)", fontSize: "1.65rem" }}
+        >
+          WANT TO GET IN CONTACT? YOU CAN FIND ME ON THE FOLLOWING SOCIALS
+        </span>
         <a
           href="mailto:sergioallushaj@gmail.com"
           id="emailLink"
           className={`link-btn email ${NeutralFaceBold.className}`}
         >
-          VANTABLACK
+          LET'S TALK
         </a>
+      </div>
+      <div className="blocco social-links">
         <span
           style={{
             color: "rgba(255, 255, 255, 0.45)",
@@ -54,13 +32,6 @@ export default function Footer() {
           }}
         >
           DEVELOPED AND DESIGNED BY ©VANTABLACK
-        </span>
-      </div>
-      <div className="blocco social-links">
-        <span
-          style={{ color: "rgba(255, 255, 255, 0.45)", fontSize: "1.65rem" }}
-        >
-          WANT TO GET IN CONTACT? YOU CAN FIND ME ON THE FOLLOWING SOCIALS
         </span>
         <div className="socials">
           <a

@@ -19,6 +19,7 @@ const StyledServices = styled.div`
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 
     /* Apply overlay only if it's not .skill-title */
     &:not(.skill-title)::before {
@@ -67,6 +68,7 @@ const StyledServices = styled.div`
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
+    cursor: unset;
   }
 
   .skill-1 {

@@ -153,7 +153,7 @@
     margin: 0;
     padding: 0;
     height: 100vh !important;
-    gap: 55px;
+    justify-content: space-evenly;
   }
 
   .email {
@@ -161,16 +161,33 @@
   }
 
   .social-links {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
+    align-items: baseline;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: baseline;
   }
 
   #footer span {
+    text-align: left;
     font-size: 1.2rem !important;
+    margin-bottom: 0;
   }
 
   .intro-container p {
     width: 90%;
+  }
+
+  #footer,
+  #footer .blocco {
+    margin-bottom: 0 !important;
+  }
+
+  #footer .section-title a {
+    font-size: 6rem;
   }
 }
 

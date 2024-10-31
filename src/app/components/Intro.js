@@ -41,6 +41,17 @@ export default function Intro() {
           I focus on creating modern, responsive, and highly functional websites
           that offer a unique design and an exceptional user experience.
         </p>
+        <div className="socials">
+          <a
+            className="link-btn"
+            href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
+          >
+            LINKEDIN
+          </a>
+          <a className="link-btn link" href="https://github.com/kuroiokami89">
+            GITHUB
+          </a>
+        </div>
       </div>
     </div>
   );

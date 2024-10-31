@@ -7,25 +7,7 @@ import { NeutralFace, NeutralFaceBold } from "./fonts";
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-const StyledProjectsItems = styled.div`
-  .project-img {
-    width: 840px;
-    height: 750px;
-    background-position: center;
-    background-size: cover;
-    transition: opacity 0.8s ease-in-out;
-  }
-
-  .project {
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0.5;
-    transition: opacity 0.8s ease-in-out;
-  }
-
-  .project:hover {
-    opacity: 1;
-  }
-`;
+const StyledProjectsItems = styled.div``;
 
 export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
   const projectRef = useRef(null);
