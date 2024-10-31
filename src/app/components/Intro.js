@@ -40,8 +40,8 @@ export default function Intro() {
           utilize my Adobe expertise in Photoshop, Illustrator, and After
           Effects for professional graphic design and dynamic animations.
         </p>
-        <a href="#projects" className={`${NeutralFace.className}`}>
-          FEATURED PROJECTS (3)
+        <a href="/about" className={`${NeutralFace.className}`}>
+          SEE MORE ABOUT ME
         </a>
       </div>
     </div>
