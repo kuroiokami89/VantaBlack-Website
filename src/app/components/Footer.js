@@ -8,13 +8,17 @@ export default function Footer() {
 
   return (
     <footer id="footer" className={`${NeutralFace.className}`}>
+      <span
+        className="blocco"
+        style={{
+          color: "rgba(255, 255, 255, 0.45)",
+          fontSize: "1.65rem",
+          marginBottom: "0 !important",
+        }}
+      >
+        WANT TO GET IN CONTACT? YOU CAN FIND ME ON THE FOLLOWING SOCIALS
+      </span>
       <div className="section-title" style={{ position: "relative" }}>
-        <span
-          className="blocco"
-          style={{ color: "rgba(255, 255, 255, 0.45)", fontSize: "1.65rem" }}
-        >
-          WANT TO GET IN CONTACT? YOU CAN FIND ME ON THE FOLLOWING SOCIALS
-        </span>
         <a
           href="mailto:sergioallushaj@gmail.com"
           id="emailLink"
