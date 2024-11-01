@@ -47,10 +47,6 @@
     font-size: 3.5rem !important;
   }
 
-  #header {
-    display: none !important;
-  }
-
   #footer {
     margin: 0 30px;
   }
@@ -182,7 +178,7 @@
   }
 
   #footer .section-title a {
-    font-size: 9rem;
+    font-size: 7.5rem;
   }
 
   #about {
@@ -194,7 +190,7 @@
   }
 
   #about p {
-    padding: 100px 50px;
+    padding: 150px 20px;
     padding-bottom: 20px;
     font-size: 1.1rem;
     width: 100%;
@@ -202,9 +198,36 @@
     gap: 10px;
   }
 
+  #about::before {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+
   #about a {
     padding-left: 50px;
     width: 100%;
+  }
+
+  #time,
+  #menu {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #header .blocco {
+    margin-bottom: 0 !important;
+  }
+
+  .header-container {
+    padding: 20px 0;
   }
 }
 

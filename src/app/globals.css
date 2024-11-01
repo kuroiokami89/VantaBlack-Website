@@ -117,14 +117,18 @@ a {
   cursor: pointer;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .close-toggle {
   position: absolute;
-  top: 37px;
-  right: 87px;
+  top: 20px;
+  right: 39px;
 }
 
 #header .link-btn {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .header-container {
