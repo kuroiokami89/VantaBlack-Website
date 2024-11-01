@@ -41,13 +41,13 @@ export default function Header() {
           <LocalTime />
         </div>
         <div id="menu">
+          <a href="/about">ABOUT</a>
           <a href="#services">SERVICES</a>
           <a href="#projects">PROJECTS</a>
-          <a href="/about">ABOUT</a>
           <a href="#footer">CONTACT</a>
         </div>
         <a className="menu-toggle" onClick={toggleOverlay}>
-          Open Menu
+          MENU
         </a>
       </div>
 
