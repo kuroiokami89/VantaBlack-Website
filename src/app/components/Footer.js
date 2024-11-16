@@ -12,11 +12,11 @@ export default function Footer() {
         className="blocco"
         style={{
           color: "rgba(255, 255, 255, 0.45)",
-          fontSize: "1.65rem",
+          fontSize: "1.75rem",
           marginBottom: "0 !important",
         }}
       >
-        WANT TO GET IN CONTACT?
+        WANT TO REACH ME ?
       </span>
       <div className="section-title" style={{ position: "relative" }}>
         <a
@@ -24,19 +24,10 @@ export default function Footer() {
           id="emailLink"
           className={`link-btn email ${NeutralFaceBold.className}`}
         >
-          LET'S TALK
+          EMAIL ME
         </a>
       </div>
       <div className="blocco social-links">
-        <span
-          style={{
-            color: "rgba(255, 255, 255, 0.45)",
-            fontSize: "1.15rem",
-            marginBottom: "15px",
-          }}
-        >
-          DEVELOPED BY ©VANTABLACK
-        </span>
         <div className="socials">
           <a
             className="link-btn"
@@ -48,6 +39,14 @@ export default function Footer() {
             GITHUB
           </a>
         </div>
+        <span
+          style={{
+            color: "rgba(255, 255, 255, 0.45)",
+            marginBottom: "20px",
+          }}
+        >
+          WEBSITE MADE BY ©VANTABLACK
+        </span>
       </div>
     </footer>
   );

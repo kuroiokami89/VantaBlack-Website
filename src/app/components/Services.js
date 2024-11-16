@@ -47,6 +47,7 @@ const StyledServices = styled.div`
     &:nth-child(1) {
       width: 35%;
       border-left: 0;
+      border-bottom: 0;
     }
 
     &:nth-child(2) {
@@ -69,17 +70,22 @@ const StyledServices = styled.div`
     flex-direction: column;
     justify-content: space-between;
     cursor: unset;
+    border-bottom: 0;
+    border-right: 0;
   }
 
   .skill-1 {
+    border-bottom: 0;
     background-image: url("./front-end.jpg");
   }
 
   .skill-2 {
+    border-right: 0;
     background-image: url("./ux-ui.jpg");
   }
 
   .skill-3 {
+    border-right: 0;
     background-image: url("./video-editing.jpg");
   }
 
@@ -100,6 +106,10 @@ const StyledServices = styled.div`
       padding: 20px;
       border-left: 0;
       border-right: 0;
+    }
+
+    .skill:not(.skill-title)::before {
+      opacity: 0.55;
     }
   }
 `;

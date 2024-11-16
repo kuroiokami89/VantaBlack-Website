@@ -42,7 +42,7 @@ export default function Header() {
         </div>
         <div id="menu">
           <a href="/about">ABOUT</a>
-          <a href="#services">SERVICES</a>
+          <a href="#services2">SKILLS</a>
           <a href="#projects">PROJECTS</a>
           <a href="#footer">CONTACT</a>
         </div>

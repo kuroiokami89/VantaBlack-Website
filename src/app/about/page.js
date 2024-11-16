@@ -1,10 +1,50 @@
 "use client";
 
 import { NeutralFace } from "../components/fonts.js";
+import styled from "styled-components";
+
+const StyledAbout = styled.div`
+  height: 100vh;
+  margin-bottom: 200px;
+  background-image: url("/Me-edited.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    margin-left: 200px;
+    width: 30%;
+    color: white;
+    text-align: justify;
+  }
+
+  a {
+    width: 20%;
+  }
+`;
 
 export default function About() {
   return (
-    <div id="about" className={`${NeutralFace.className}`}>
+    <StyledAbout id="about" className={`${NeutralFace.className}`}>
       <p>
         I'm Sergio Allushaj, a front-end developer from Italy. I began my
         journey in front-end development with the goal of creating modern,
@@ -22,6 +62,6 @@ export default function About() {
       <a className="link-btn link" href="/">
         RETURN TO HOMEPAGE
       </a>
-    </div>
+    </StyledAbout>
   );
 }

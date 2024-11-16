@@ -28,7 +28,11 @@ const LocalTime = ({ timezone }) => {
 
   if (!mounted) return null; // Don't render on the server
 
-  return <div>{time} IT , CASTELFRANCO VENETO</div>;
+  return (
+    <>
+      <p id="time"> {time} IT , CASTELFRANCO VENETO </p>
+    </>
+  );
 };
 
 export default LocalTime;

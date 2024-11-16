@@ -146,15 +146,17 @@
   #footer {
     text-align: center;
     margin: 0;
-    padding: 0;
-    height: 100vh !important;
-    justify-content: space-evenly;
+    margin-top: 200px;
+    padding: 20px;
+    gap: 30px;
+    font-size: 1.1rem;
   }
 
   .social-links {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 40px;
     align-items: baseline;
+    margin: 0;
   }
 
   .socials {
@@ -163,9 +165,12 @@
   }
 
   #footer span {
-    text-align: center;
-    font-size: 1.2rem !important;
-    margin-bottom: 0;
+    text-align: left;
+    margin: 0 !important;
+  }
+
+  .social-links span {
+    font-size: 1rem !important;
   }
 
   .intro-container p {
@@ -178,7 +183,7 @@
   }
 
   #footer .section-title a {
-    font-size: 7.5rem;
+    font-size: 7rem;
   }
 
   #about {
@@ -187,6 +192,9 @@
     gap: 50px;
     align-items: center;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent black */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Support for older browsers */
   }
 
   #about p {
@@ -203,7 +211,7 @@
   }
 
   #about a {
-    padding-left: 50px;
+    padding-left: 20px;
     width: 100%;
   }
 
@@ -233,6 +241,5 @@
 
 @media screen and (max-width: 480px) {
   #footer {
-    height: 100vh !important;
   }
 }

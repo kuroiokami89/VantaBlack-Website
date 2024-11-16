@@ -132,12 +132,16 @@ a {
 }
 
 .header-container {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 17px 0;
   margin-bottom: 0 !important;
+}
+
+#time {
+  font-size: 1.05rem;
 }
 
 .header-anchors {
@@ -162,7 +166,7 @@ a {
 }
 
 #footer .section-title a {
-  font-size: 19rem;
+  font-size: 23rem;
 }
 
 .socials {
@@ -188,6 +192,10 @@ a {
 #footer span {
   text-align: center;
   margin-bottom: 20px !important;
+}
+
+.social-links span {
+  font-size: 1.1rem !important;
 }
 
 .social-links {
@@ -232,8 +240,8 @@ a {
 }
 
 .title {
-  font-size: 16rem;
-  padding-top: 150px;
+  font-size: 16.7rem;
+  padding-top: 80px;
 }
 /** FINE STILE INTRO **/
 
@@ -342,46 +350,4 @@ a {
 .button:hover::before {
   transform-origin: center bottom;
   transform: scaleY(1);
-}
-
-/* ABOUT */
-
-#about {
-  height: 100vh;
-  margin-bottom: 200px;
-  background-image: url("/Me-edited.png"); /* Corrected path */
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Overlay for background opacity */
-#about::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity as needed */
-  z-index: 0; /* Keep this behind the text */
-}
-
-#about p {
-  position: relative; /* Changed to relative */
-  z-index: 1; /* Ensure text is above the overlay */
-  margin-left: 200px;
-  width: 30%;
-  color: white; /* Ensure text is visible */
-  text-align: justify; /* Optional for better text layout */
-}
-
-#about a {
-  width: 20%;
 }
