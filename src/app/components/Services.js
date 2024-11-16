@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import { NeutralFace } from "./fonts";
 
@@ -27,6 +29,19 @@ const StyledServices = styled.div`
       z-index: 1;
     }
 
+    &.skill-1 {
+      background-image: url("./front-end.jpg");
+    }
+    &.skill-2 {
+      background-image: url("./ux-ui.jpg");
+    }
+    &.skill-3 {
+      background-image: url("./video-editing.jpg");
+    }
+    &.skill-4 {
+      background-image: url("./graphic.jpeg");
+    }
+
     &:not(.skill-title)::before {
       content: "";
       position: absolute;
@@ -40,19 +55,6 @@ const StyledServices = styled.div`
 
     &:hover:not(.skill-title)::before {
       opacity: 0.55;
-    }
-
-    &.skill-1 {
-      background-image: url("./front-end.jpg");
-    }
-    &.skill-2 {
-      background-image: url("./ux-ui.jpg");
-    }
-    &.skill-3 {
-      background-image: url("./video-editing.jpg");
-    }
-    &.skill-4 {
-      background-image: url("./graphic.jpeg");
     }
 
     &:nth-child(1) {
@@ -85,12 +87,6 @@ const StyledServices = styled.div`
 
       &::before {
         opacity: 1;
-      }
-
-      .skill-title {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
       }
     }
   }
