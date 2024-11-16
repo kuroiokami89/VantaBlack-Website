@@ -28,7 +28,7 @@ const StyledServices = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 1);
+      background-color: rgba(0, 0, 0, 0.55);
       z-index: 0;
       transition: opacity 0.6s ease-in;
     }
@@ -103,11 +103,14 @@ const StyledServices = styled.div`
       padding: 20px;
       border-left: 0;
       border-right: 0;
+      cursor: none;
     }
 
-    &:not(.skill-title)::before {
-      background-color: transparent;
-      opacity: 0.55;
+    .skill::before {
+      opacity: 1 !important; /* Imposta l'opacità a 1 per i dispositivi mobili */
+    }
+    .skill:hover::before {
+      opacity: 1 !important; /* Disabilita l'effetto hover sui dispositivi mobili */
     }
   }
 `;
