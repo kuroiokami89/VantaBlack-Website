@@ -18,26 +18,26 @@ const StyledServices = styled.div`
   }
 
   .skill-1 {
-    background-image: url("./front-end.jpg");
+    background-image: url("/front-end.jpg");
     width: 35%;
     border-left: 0;
     border-bottom: 0;
   }
 
   .skill-2 {
-    background-image: url("./ux-ui.jpg");
+    background-image: url("/ux-ui.jpg");
     width: 65%;
     border-right: 0;
   }
 
   .skill-3 {
-    background-image: url("./video-editing.jpg");
+    background-image: url("/video-editing.jpg");
     width: 35%;
     border-left: 0;
   }
 
   .skill-4 {
-    background-image: url("./graphic.jpeg");
+    background-image: url("/graphic.jpeg");
     border-right: 0;
   }
 
