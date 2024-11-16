@@ -42,16 +42,16 @@ const StyledServices = styled.div`
       opacity: 0.55;
     }
 
-    .skill-1 {
+    &.skill-1 {
       background-image: url("./front-end.jpg");
     }
-    .skill-2 {
+    &.skill-2 {
       background-image: url("./ux-ui.jpg");
     }
-    .skill-3 {
+    &.skill-3 {
       background-image: url("./video-editing.jpg");
     }
-    .skill-4 {
+    &.skill-4 {
       background-image: url("./graphic.jpeg");
     }
 
