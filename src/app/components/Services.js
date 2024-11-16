@@ -3,7 +3,6 @@ import { NeutralFace } from "./fonts";
 
 const StyledServices = styled.div`
   margin-bottom: 200px;
-
   display: flex;
   flex-wrap: wrap;
 
@@ -20,6 +19,13 @@ const StyledServices = styled.div`
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: background-color 0.6s ease-in;
+
+    h3 {
+      font-size: 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
 
     &:not(.skill-title)::before {
       content: "";
@@ -30,17 +36,23 @@ const StyledServices = styled.div`
       height: 100%;
       background-color: rgba(0, 0, 0, 0.55);
       z-index: 0;
-      transition: opacity 0.6s ease-in;
     }
 
     &:hover:not(.skill-title)::before {
       opacity: 0.55;
     }
 
-    h3 {
-      font-size: 2.5rem !important;
-      position: relative;
-      z-index: 1;
+    &.skill-1 {
+      background-image: url("./front-end.jpg");
+    }
+    &.skill-2 {
+      background-image: url("./ux-ui.jpg");
+    }
+    &.skill-3 {
+      background-image: url("./video-editing.jpg");
+    }
+    &.skill-4 {
+      background-image: url("./graphic.jpeg");
     }
 
     &:nth-child(1) {
@@ -64,62 +76,42 @@ const StyledServices = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-      .skill {
-        width: 100% !important;
-        height: 400px;
-        padding: 20px;
-        border-left: 0;
-        border-right: 0;
-        cursor: none;
+      width: 100%;
+      height: 400px;
+      padding: 20px;
+      cursor: unset;
+      border-left: 0;
+      border-right: 0;
+
+      &::before {
+        opacity: 1;
       }
 
-      .skill::before {
-        opacity: 1 !important;
-      }
-      .skill:hover::before {
-        opacity: 1 !important;
+      .skill-title {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
       }
     }
   }
 
   .skill-title {
+    display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
     cursor: unset;
-    border-bottom: 0;
-    border-right: 0;
-  }
-
-  .skill-1 {
-    border-bottom: 0;
-    background-image: url("./front-end.jpg");
-  }
-
-  .skill-2 {
-    border-right: 0;
-    background-image: url("./ux-ui.jpg");
-  }
-
-  .skill-3 {
-    border-right: 0;
-    background-image: url("./video-editing.jpg");
-  }
-
-  .skill-4 {
-    background-image: url("./graphic.jpeg");
+    border: none;
   }
 
   @media screen and (max-width: 768px) {
-    & {
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
 `;
 
 export default function Services() {
   return (
-    <StyledServices id="services2" className={`${NeutralFace.className}`}>
+    <StyledServices className={`${NeutralFace.className}`}>
       <div className="skill skill-title">
         <h3>My skills</h3>
       </div>
