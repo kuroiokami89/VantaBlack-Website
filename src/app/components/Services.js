@@ -98,7 +98,6 @@ const StyledServices = styled.div`
     }
 
     .skill {
-      display: block !important;
       width: 100% !important;
       height: 400px;
       padding: 20px;
