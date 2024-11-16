@@ -106,7 +106,8 @@ const StyledServices = styled.div`
       border-right: 0;
     }
 
-    .skill:not(.skill-title)::before {
+    &:not(.skill-title)::before {
+      background-color: transparent;
       opacity: 0.55;
     }
   }
