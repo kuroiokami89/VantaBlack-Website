@@ -21,7 +21,6 @@ const StyledServices = styled.div`
     overflow: hidden;
     cursor: pointer;
 
-    /* Apply overlay only if it's not .skill-title */
     &:not(.skill-title)::before {
       content: "";
       position: absolute;
@@ -93,7 +92,6 @@ const StyledServices = styled.div`
     background-image: url("./graphic.jpeg");
   }
 
-  /* Updated media query */
   @media screen and (max-width: 768px) {
     #services2 {
       flex-direction: column;
