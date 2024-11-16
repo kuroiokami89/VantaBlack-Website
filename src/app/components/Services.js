@@ -43,16 +43,16 @@ const StyledServices = styled.div`
     }
 
     &.skill-1 {
-      background-image: url("/front-end.jpg");
+      background-image: url("./front-end.jpg");
     }
     &.skill-2 {
-      background-image: url("/ux-ui.jpg");
+      background-image: url("./ux-ui.jpg");
     }
     &.skill-3 {
-      background-image: url("/video-editing.jpg");
+      background-image: url("./video-editing.jpg");
     }
     &.skill-4 {
-      background-image: url("/graphic.jpeg");
+      background-image: url("./graphic.jpeg");
     }
 
     &:nth-child(1) {
