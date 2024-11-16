@@ -62,6 +62,24 @@ const StyledServices = styled.div`
     &:nth-child(5) {
       border-right: 0;
     }
+
+    @media screen and (max-width: 768px) {
+      .skill {
+        width: 100% !important;
+        height: 400px;
+        padding: 20px;
+        border-left: 0;
+        border-right: 0;
+        cursor: none;
+      }
+
+      .skill::before {
+        opacity: 1 !important;
+      }
+      .skill:hover::before {
+        opacity: 1 !important;
+      }
+    }
   }
 
   .skill-title {
@@ -93,24 +111,8 @@ const StyledServices = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    #services2 {
+    & {
       flex-direction: column;
-    }
-
-    .skill {
-      width: 100% !important;
-      height: 400px;
-      padding: 20px;
-      border-left: 0;
-      border-right: 0;
-      cursor: none;
-    }
-
-    .skill::before {
-      opacity: 1 !important; /* Imposta l'opacità a 1 per i dispositivi mobili */
-    }
-    .skill:hover::before {
-      opacity: 1 !important; /* Disabilita l'effetto hover sui dispositivi mobili */
     }
   }
 `;
