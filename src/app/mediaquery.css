@@ -253,11 +253,11 @@
   }
 
   .skill::before {
-    opacity: 1 !important;
+    opacity: 0.4 !important;
   }
 
   .skill:hover::before {
-    opacity: 1 !important;
+    opacity: 0.4 !important;
   }
 }
 
