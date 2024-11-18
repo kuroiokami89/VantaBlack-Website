@@ -427,20 +427,20 @@ a {
 }
 
 .skill-1 {
-  background-image: url("./front-end.jpg");
+  background-image: url("./assets/skills/front-end.jpg");
   border-bottom: 0;
 }
 
 .skill-2 {
-  background-image: url("./ux-ui.jpg");
+  background-image: url("./assets/skills/ux-ui.jpg");
   border-right: 0;
 }
 
 .skill-3 {
-  background-image: url("./video-editing.jpg");
+  background-image: url("./assets/skills/video-editing.jpg");
   border-right: 0;
 }
 
 .skill-4 {
-  background-image: url("./graphic.jpeg");
+  background-image: url("./assets/skills/graphic.jpeg");
 }
