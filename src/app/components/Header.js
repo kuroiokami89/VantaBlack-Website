@@ -12,26 +12,26 @@ export default function Header() {
     document.body.style.overflow = isOverlayOpen ? "auto" : "hidden"; // Prevent body scroll when overlay is open
   };
 
-  useEffect(() => {
-    const header = document.getElementById("header");
+  // useEffect(() => {
+  //   const header = document.getElementById("header");
 
-    const handleScroll = () => {
-      if (isOverlayOpen) return; // Skip scroll effects if overlay is open
+  //   const handleScroll = () => {
+  //     if (isOverlayOpen) return; // Skip scroll effects if overlay is open
 
-      const isScrolled = window.scrollY > 100;
-      header.style.background = isScrolled
-        ? "rgba(0, 0, 0, 0.5)"
-        : "transparent";
-      header.style.backdropFilter = isScrolled ? "blur(10px)" : "none";
-      header.style.webkitBackdropFilter = isScrolled ? "blur(10px)" : "none";
-    };
+  //     const isScrolled = window.scrollY > 100;
+  //     header.style.background = isScrolled
+  //       ? "rgba(0, 0, 0, 0.5)"
+  //       : "transparent";
+  //     header.style.backdropFilter = isScrolled ? "blur(10px)" : "none";
+  //     header.style.webkitBackdropFilter = isScrolled ? "blur(10px)" : "none";
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [isOverlayOpen]); // Re-run useEffect if `isOverlayOpen` changes
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [isOverlayOpen]); // Re-run useEffect if `isOverlayOpen` changes
 
   return (
     <header id="header" className={`${NeutralFace.className}`}>

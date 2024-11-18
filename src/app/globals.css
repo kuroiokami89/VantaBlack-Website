@@ -79,6 +79,9 @@ a {
   width: 100%;
   z-index: 99;
   transition: background-color 0.5s ease, opacity 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent black */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Support for older browsers */
 }
 
 #menu {
@@ -122,9 +125,10 @@ a {
 }
 
 .close-toggle {
+  font-size: 1.05rem;
   position: absolute;
-  top: 20px;
-  right: 39px;
+  top: 15px;
+  right: 22px;
 }
 
 #header .link-btn {
