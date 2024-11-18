@@ -59,9 +59,6 @@ export default function About() {
       <a className="link-btn link" href="/CV ALLUSHAJ SERGIO.pdf" download>
         DOWNLOAD CV (ITA)
       </a>
-      <a className="link-btn link" href="/">
-        RETURN TO HOMEPAGE
-      </a>
     </StyledAbout>
   );
 }
