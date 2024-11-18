@@ -90,45 +90,8 @@ a {
   gap: 30px;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  right: -500px; /* Hidden off-screen */
-  height: 100vh;
-  width: 500px;
-  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent black */
-  backdrop-filter: blur(10px); /* Blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Support for older browsers */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.85); /* Stronger shadow for more depth */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 20px;
-  z-index: 1;
-  transition: right 0.3s ease-in-out;
-  padding-right: 85px;
-  font-size: 1.3rem;
-}
-
-.overlay.open {
-  right: 0; /* Slide-in */
-}
-
-.menu-toggle,
-.close-toggle {
-  cursor: pointer;
-}
-
-.menu-toggle {
+#mobile-menu {
   display: none;
-}
-
-.close-toggle {
-  font-size: 1.05rem;
-  position: absolute;
-  top: 15px;
-  right: 22px;
 }
 
 #header .link-btn {

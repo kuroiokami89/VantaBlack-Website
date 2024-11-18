@@ -221,8 +221,11 @@
     display: none !important;
   }
 
-  .menu-toggle {
+  #mobile-menu {
     display: block;
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
 
   #header {

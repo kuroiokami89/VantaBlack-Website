@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { NeutralFace, NeutralFaceBold, AvertaBold, TT } from "./fonts";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -19,7 +17,7 @@ export default function Intro() {
     gsap.fromTo(
       el,
       { opacity: 0 }, // Initial state (hidden)
-      { opacity: 1, duration: 2.5, ease: "power2.out", delay: 0.5 } // Fade in with slight delay
+      { opacity: 1, duration: 1.5, ease: "power2.out", delay: 0.5 } // Fade in with slight delay
     );
   }, []);
 
