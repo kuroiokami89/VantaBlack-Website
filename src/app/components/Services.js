@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const StyledServices = styled.div`
   margin-bottom: 200px;
-
   display: flex;
   flex-wrap: wrap;
 
@@ -20,8 +19,9 @@ const StyledServices = styled.div`
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.3s ease;
 
-    &:not(.skill-title)::before {
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -33,12 +33,12 @@ const StyledServices = styled.div`
       transition: opacity 0.6s ease-in;
     }
 
-    &:hover:not(.skill-title)::before {
+    &:hover::before {
       opacity: 0.55;
     }
 
     h3 {
-      font-size: 2.5rem !important;
+      font-size: 2.5rem;
       position: relative;
       z-index: 1;
     }
@@ -62,24 +62,6 @@ const StyledServices = styled.div`
     &:nth-child(5) {
       border-right: 0;
     }
-
-    @media screen and (max-width: 768px) {
-      .skill {
-        width: 100% !important;
-        height: 400px;
-        padding: 20px;
-        border-left: 0;
-        border-right: 0;
-        cursor: none;
-      }
-
-      .skill::before {
-        opacity: 1 !important;
-      }
-      .skill:hover::before {
-        opacity: 1 !important;
-      }
-    }
   }
 
   .skill-title {
@@ -91,28 +73,45 @@ const StyledServices = styled.div`
     border-right: 0;
   }
 
+  /* Individual Skill Backgrounds */
   .skill-1 {
-    border-bottom: 0;
     background-image: url("./front-end.jpg");
+    border-bottom: 0;
   }
 
   .skill-2 {
-    border-right: 0;
     background-image: url("./ux-ui.jpg");
+    border-right: 0;
   }
 
   .skill-3 {
-    border-right: 0;
     background-image: url("./video-editing.jpg");
+    border-right: 0;
   }
 
   .skill-4 {
     background-image: url("./graphic.jpeg");
   }
 
+  /* Media Queries */
   @media screen and (max-width: 768px) {
-    & {
-      flex-direction: column;
+    flex-direction: column;
+
+    .skill {
+      width: 100% !important;
+      height: 400px;
+      padding: 20px;
+      border-left: 0;
+      border-right: 0;
+      cursor: auto;
+
+      &::before {
+        opacity: 1 !important;
+      }
+
+      &:hover::before {
+        opacity: 1 !important;
+      }
     }
   }
 `;
