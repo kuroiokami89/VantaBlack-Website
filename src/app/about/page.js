@@ -24,7 +24,7 @@ const StyledAbout = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.25);
     z-index: 0;
   }
 

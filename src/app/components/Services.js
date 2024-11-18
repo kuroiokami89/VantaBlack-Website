@@ -3,8 +3,8 @@ import { NeutralFace } from "./fonts";
 export default function Services() {
   return (
     <div id="services" className={`${NeutralFace.className}`}>
-      <div className="skill skill-title">
-        <h3>My skills</h3>
+      <div className="skill-title">
+        <h2>My skills</h2>
       </div>
       <div className="skill skill-1">
         <h3>Front-end development</h3>

@@ -326,7 +326,8 @@ a {
   flex-wrap: wrap;
 }
 
-.skill {
+.skill,
+.skill-title {
   border: 1px solid white;
   padding: 1.5%;
   display: flex;
@@ -363,13 +364,6 @@ a {
   position: relative;
   z-index: 1;
 }
-
-.skill:nth-child(1) {
-  width: 35%;
-  border-left: 0;
-  border-bottom: 0;
-}
-
 .skill:nth-child(2) {
   width: 65%;
   border-right: 0;
@@ -385,12 +379,17 @@ a {
 }
 
 .skill-title {
+  width: 35%;
+  border-left: 0;
+  border-bottom: 0;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   cursor: unset;
   border-bottom: 0;
   border-right: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .skill-1 {
