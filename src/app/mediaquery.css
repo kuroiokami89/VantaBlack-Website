@@ -238,6 +238,27 @@
   .header-container {
     padding: 15px 0;
   }
+
+  #services {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 100% !important;
+    height: 400px;
+    padding: 20px;
+    border-left: 0;
+    border-right: 0;
+    cursor: auto;
+  }
+
+  .skill::before {
+    opacity: 1 !important;
+  }
+
+  .skill:hover::before {
+    opacity: 1 !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
