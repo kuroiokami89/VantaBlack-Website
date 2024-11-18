@@ -6,6 +6,7 @@ const StyledServices = styled.div`
   display: flex;
   flex-wrap: wrap;
 
+  /* Skill Styles */
   .skill {
     border: 1px solid white;
     padding: 1.5%;
@@ -20,50 +21,51 @@ const StyledServices = styled.div`
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.55);
-      z-index: 0;
-      transition: opacity 0.6s ease-in;
-    }
-
-    &:hover::before {
-      opacity: 0.55;
-    }
-
-    h3 {
-      font-size: 2.5rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    &:nth-child(1) {
-      width: 35%;
-      border-left: 0;
-      border-bottom: 0;
-    }
-
-    &:nth-child(2) {
-      width: 65%;
-      border-right: 0;
-    }
-
-    &:nth-child(3) {
-      width: 35%;
-      border-left: 0;
-    }
-
-    &:nth-child(5) {
-      border-right: 0;
-    }
   }
 
+  .skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+    transition: opacity 0.6s ease-in;
+  }
+
+  .skill:hover::before {
+    opacity: 0.55;
+  }
+
+  .skill h3 {
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .skill:nth-child(1) {
+    width: 35%;
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  .skill:nth-child(2) {
+    width: 65%;
+    border-right: 0;
+  }
+
+  .skill:nth-child(3) {
+    width: 35%;
+    border-left: 0;
+  }
+
+  .skill:nth-child(5) {
+    border-right: 0;
+  }
+
+  /* Skill Titles */
   .skill-title {
     align-items: flex-start;
     flex-direction: column;
@@ -104,14 +106,14 @@ const StyledServices = styled.div`
       border-left: 0;
       border-right: 0;
       cursor: auto;
+    }
 
-      &::before {
-        opacity: 1 !important;
-      }
+    .skill::before {
+      opacity: 1 !important;
+    }
 
-      &:hover::before {
-        opacity: 1 !important;
-      }
+    .skill:hover::before {
+      opacity: 1 !important;
     }
   }
 `;
