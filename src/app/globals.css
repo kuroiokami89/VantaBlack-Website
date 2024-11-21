@@ -409,3 +409,58 @@ a {
 .skill-4 {
   background-image: url("./assets/skills/graphic.jpeg");
 }
+
+/* ALL PROJECTS PAGE STYLE */
+#all-projects-container {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.graphic {
+  border: solid 1px white;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  transition: opacity 0.55s ease-in;
+  cursor: pointer;
+}
+
+.graphic:hover {
+  opacity: 1;
+}
+
+.graphic:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.graphic:nth-child(3n) {
+  border-right: none;
+}
+
+.graphic-1 {
+  background-image: url("/foto/Vanta-GIF.gif");
+}
+
+.graphic-2 {
+  background-image: url("/foto/Rolex-Sky-Dweller.jpg");
+}
+
+.graphic-3 {
+  background-image: url("/foto/project-3.jpg");
+}
+
+.graphic-4 {
+  background-image: url("/graphics/los_muertos.jpg");
+}
+
+.graphic-5 {
+  background-image: url("/graphics/cover.jpeg");
+}
+
+.graphic-6 {
+  background-image: url("");
+}

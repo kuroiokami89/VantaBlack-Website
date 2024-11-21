@@ -263,6 +263,27 @@
   .skill:hover::before {
     opacity: 0.4 !important;
   }
+
+  #all-projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .graphic {
+    height: 700px;
+  }
+
+  .graphic:nth-child(3n + 1) {
+    border-left: none;
+  }
+
+  .graphic:nth-child(3n) {
+    border-right: none;
+  }
+
+  .graphic {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
