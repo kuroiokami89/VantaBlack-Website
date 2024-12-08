@@ -7,25 +7,11 @@
 @media screen and (max-width: 1450px) {
   .blocco,
   #footer {
-    margin: 0 5%;
+    margin: 0 2%;
   }
 
   .project-list {
     row-gap: 200px;
-  }
-
-  h1 {
-    font-size: 5rem;
-    line-height: 1.05;
-  }
-
-  h2 {
-    font-size: 6.5rem;
-    line-height: 1.05;
-  }
-
-  #projects h2 {
-    font-size: 5.5rem;
   }
 
   .project-img {
@@ -37,14 +23,15 @@
     gap: 190px;
   }
 
-  .email {
-    font-size: 12rem;
+  .intro-container p {
+    width: 35%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  h1 {
-    font-size: 3.5rem !important;
+  .blocco,
+  #footer {
+    margin: 0 5%;
   }
 
   #footer {
@@ -104,6 +91,12 @@
   }
 }
 
+@media (max-width: 991px) {
+  .intro-container p {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body,
   html *,
@@ -114,28 +107,6 @@
   button,
   a {
     cursor: auto;
-  }
-
-  h1 {
-    line-height: 50px;
-    font-size: 3rem !important;
-  }
-
-  h2 {
-    font-size: 3rem !important;
-    line-height: unset;
-    margin-bottom: 20px !important;
-    line-height: 1.1;
-  }
-
-  h3 {
-    font-size: 1.5rem !important;
-    line-height: unset;
-    margin-bottom: 20px !important;
-  }
-
-  p {
-    font-size: 1.3rem;
   }
 
   .blocco {
@@ -169,10 +140,6 @@
     margin: 0 !important;
   }
 
-  .social-links span {
-    font-size: 1rem !important;
-  }
-
   .intro-container p {
     width: 90%;
   }
@@ -180,11 +147,6 @@
   #footer,
   #footer .blocco {
     margin-bottom: 0 !important;
-  }
-
-  #footer .section-title a {
-    text-align: left;
-    font-size: 7rem;
   }
 
   #about {
@@ -201,7 +163,6 @@
   #about p {
     padding: 150px 20px;
     padding-bottom: 20px;
-    font-size: 1.1rem;
     width: 100%;
     margin: 0;
     gap: 10px;
@@ -216,7 +177,6 @@
     width: 100%;
   }
 
-  #time,
   #menu {
     display: none !important;
   }
@@ -283,6 +243,10 @@
   .graphic {
     border-left: none;
     border-right: none;
+  }
+
+  .skill-title {
+    height: fit-content;
   }
 }
 

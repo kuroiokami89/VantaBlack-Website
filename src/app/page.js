@@ -2,6 +2,7 @@
 
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import Projects2 from "./components/Projects2";
 import Services from "./components/Services";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Intro />
       <Services />
+      {/* <Projects2 /> */}
       <Projects />
     </>
   );

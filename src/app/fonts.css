@@ -14,6 +14,10 @@ h3 {
   font-size: 25px !important;
 }
 
+.title {
+  font-size: 16.65rem;
+}
+
 p {
   font-weight: 100;
   font-size: 1.25rem;
@@ -36,4 +40,104 @@ a,
 
 .skill-title h3 {
   font-size: 4rem !important;
+}
+
+#footer .section-title a {
+  font-size: 22.75rem;
+}
+
+.project2 span {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1450px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 1.05;
+  }
+
+  .title {
+    font-size: 12rem !important;
+  }
+
+  #footer .section-title a {
+    font-size: 16.9rem;
+  }
+
+  h2 {
+    font-size: 6.5rem;
+    line-height: 1.05;
+  }
+
+  #projects h2 {
+    font-size: 5.5rem;
+  }
+
+  .email {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 3.5rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    line-height: 50px;
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 3rem !important;
+    line-height: unset;
+    margin-bottom: 20px !important;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+    line-height: unset;
+    margin-bottom: 20px !important;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .social-links span {
+    font-size: 1rem !important;
+  }
+
+  #footer .section-title a {
+    text-align: left;
+    font-size: 7rem;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .title {
+    font-size: 6.3rem !important;
+  }
+
+  #footer .section-title a {
+    font-size: 9.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3.2rem !important;
+  }
+
+  #footer .section-title a {
+    font-size: 4.3rem;
+  }
 }

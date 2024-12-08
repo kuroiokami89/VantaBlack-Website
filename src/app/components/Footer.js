@@ -7,9 +7,9 @@ export default function Footer() {
   const footerRef = useRef(null);
 
   return (
-    <footer id="footer" className={`${NeutralFace.className}`}>
+    <footer id="footer" className={`blocco ${NeutralFace.className}`}>
       <span
-        className="blocco"
+        className=""
         style={{
           color: "rgba(255, 255, 255, 0.45)",
           fontSize: "1.75rem",
@@ -27,7 +27,7 @@ export default function Footer() {
           EMAIL ME
         </a>
       </div>
-      <div className="blocco social-links">
+      <div className="social-links">
         <div className="socials">
           <a
             className="link-btn"

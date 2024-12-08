@@ -33,10 +33,9 @@ export default function Intro() {
           <h1 className="title">VANTABLACK</h1>
         </div>
         <p className={`${NeutralFace.className}`}>
-          I aim to create modern, responsive websites that offer unique designs
-          and exceptional user experiences. Alongside front-end development, I
-          utilize my Adobe expertise in Photoshop, Illustrator, and After
-          Effects for professional graphic design and dynamic animations.
+          Italy-based, junior front-end developer with a strong foundation in
+          responsive design and UX/UI principles. Passionate about crafting
+          user-friendly, visually engaging, and impactful web experiences.
         </p>
         <a href="/about" className={`${NeutralFace.className}`}>
           SEE MORE ABOUT ME

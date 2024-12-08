@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header id="header" className={`${NeutralFace.className}`}>
       <div className="header-container blocco">
-        <a href="/">VANTABLACK</a>
+        {/* <a href="/">VANTABLACK</a> */}
         <div id="time">
           <LocalTime />
         </div>
@@ -16,8 +16,8 @@ export default function Header() {
           <a href="#footer">CONTACT</a>
         </div>
         <div id="mobile-menu">
+          <a href="/">HOME</a>
           <a href="/about">ABOUT</a>
-          <a href="#footer">CONTACT</a>
         </div>
       </div>
     </header>
