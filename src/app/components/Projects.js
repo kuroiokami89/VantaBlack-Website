@@ -13,7 +13,7 @@ export default function Projects() {
             link="https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/"
             imgClass="project-1"
             spanText="Portfolio Website"
-            h3Text="Vantablack portfolio"
+            h3Text="Vantablack portfolio (OLD VERSION)"
           />
           <ProjectItem
             link="http://sapphire.altervista.org/"
