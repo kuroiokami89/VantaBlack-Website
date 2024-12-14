@@ -57,6 +57,13 @@ export default function About() {
         prototyping, ensuring exceptional user experiences in every project.
       </p>
 
+      <a
+        className="link-btn link"
+        href="/CV ALLUSHAJ SERGIO - ENG.pdf"
+        download
+      >
+        DOWNLOAD CV (ENG)
+      </a>
       <a className="link-btn link" href="/CV ALLUSHAJ SERGIO.pdf" download>
         DOWNLOAD CV (ITA)
       </a>
