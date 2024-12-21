@@ -16,6 +16,12 @@ export default function Projects() {
             h3Text="Vantablack portfolio (OLD VERSION)"
           />
           <ProjectItem
+            link="/graphic-projects"
+            imgClass="project-4"
+            spanText="ASSIGNMENT"
+            h3Text="GRAPHIC PROJECTS"
+          />
+          <ProjectItem
             link="http://sapphire.altervista.org/"
             imgClass="project-2"
             spanText="Bootstrap website"
@@ -28,6 +34,12 @@ export default function Projects() {
             imgClass="project-3"
             spanText="Ecommerce website"
             h3Text="Kronos luxury watch e-shop"
+          />
+          <ProjectItem
+            link="http://versisenzaconfini.altervista.org/"
+            imgClass="project-5"
+            spanText="Website"
+            h3Text="Versi senza confini"
           />
         </div>
       </div>

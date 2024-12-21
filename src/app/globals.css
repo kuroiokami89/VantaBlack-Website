@@ -278,6 +278,14 @@ a {
 .project-3 {
   background-image: url("./assets/foto/Rolex-Sky-Dweller.gif");
 }
+
+.project-4 {
+  background-image: url("./assets/foto/g3.jpg");
+}
+
+.project-5 {
+  background-image: url("./assets/foto/g-5.png");
+}
 /** FINE STILE PROJECTS **/
 
 /** PROJECTS 2 **/
@@ -511,4 +519,38 @@ a {
 
 .graphic-6 {
   background-image: url("");
+}
+
+#graphic-page {
+  padding-top: 100px;
+  display: flex;
+  gap: 20px;
+}
+
+#graphic-page p {
+  flex: 0 0 35%;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+#graphic-page .projects-list {
+  flex: 0 0 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.projects-list img,
+.projects-list video {
+  width: 700px;
+  height: auto;
 }
