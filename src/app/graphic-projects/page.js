@@ -17,9 +17,6 @@ export default function GraphicProjectsPage() {
         <img src="/foto/g1.png" alt="Graphic Project 1" />
         <img src="/foto/g2.png" alt="Graphic Project 2" />
         <img src="/foto/g3.jpg" alt="Graphic Project 3" />
-        <video src="/foto/g4.mp4" controls poster="">
-          Your browser does not support the video tag.
-        </video>
       </div>
     </div>
   );
