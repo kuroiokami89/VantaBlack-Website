@@ -16,8 +16,8 @@ export default function GraphicProjectsPage() {
       <div className="projects-list">
         <img src="/foto/g1.png" alt="Graphic Project 1" />
         <img src="/foto/g2.png" alt="Graphic Project 2" />
-        <img src="/foto/g3.jpg" alt="Graphic Project 3" />
-        <img src="/foto/g3.jpg" alt="Graphic Project 3" />
+        {/* <img src="/foto/g3.jpg" alt="Graphic Project 3" />
+        <img src="/foto/g3.jpg" alt="Graphic Project 3" /> */}
       </div>
     </div>
   );
