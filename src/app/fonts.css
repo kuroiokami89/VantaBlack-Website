@@ -93,7 +93,6 @@ a,
   h2 {
     font-size: 3rem !important;
     line-height: unset;
-    /* margin-bottom: 20px !important; */
     line-height: 1.1;
   }
 
@@ -134,10 +133,10 @@ a,
 
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 3.6rem !important;
+    font-size: 3.2rem !important;
   }
 
   #footer .section-title a {
-    font-size: 5.1rem;
+    font-size: 4.3rem;
   }
 }
