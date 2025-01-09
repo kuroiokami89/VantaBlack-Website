@@ -15,8 +15,8 @@ export default function Header() {
           <a href="#footer">CONTACT</a>
         </div>
         <div id="mobile-menu">
-          <a href="/">HOME</a>
-          <a href="/about">ABOUT</a>
+          <a href="#top">TOP</a>
+          <a href="#footer">CONTACT</a>
         </div>
       </div>
     </header>

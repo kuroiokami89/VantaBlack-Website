@@ -93,7 +93,7 @@ a,
   h2 {
     font-size: 3rem !important;
     line-height: unset;
-    margin-bottom: 20px !important;
+    /* margin-bottom: 20px !important; */
     line-height: 1.1;
   }
 
@@ -138,6 +138,6 @@ a,
   }
 
   #footer .section-title a {
-    font-size: 4.3rem;
+    font-size: 5.1rem;
   }
 }
