@@ -37,7 +37,7 @@ export default function Intro() {
           responsive design and UX/UI principles. Passionate about crafting
           user-friendly, visually engaging, and impactful web experiences.
         </p>
-        <a href="/about" className={`${NeutralFace.className}`}>
+        <a href="#about" className={`${NeutralFace.className}`}>
           SEE MORE ABOUT ME
         </a>
       </div>
