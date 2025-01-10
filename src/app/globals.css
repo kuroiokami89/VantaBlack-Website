@@ -554,3 +554,43 @@ a {
   width: 700px;
   height: auto;
 }
+
+/* ABOUT COMPONENT */
+#about {
+  height: 100vh;
+  background-image: url("/Me-edited.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+#about p {
+  position: relative;
+  z-index: 1;
+  margin-left: 200px;
+  width: 30%;
+  color: white;
+  text-align: justify;
+}
+
+#about a {
+  width: 20%;
+}
