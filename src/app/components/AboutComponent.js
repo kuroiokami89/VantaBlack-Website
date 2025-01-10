@@ -7,14 +7,13 @@ export default function AboutComponent() {
     <div id="about" className={`${NeutralFace.className}`}>
       <p>
         Hi, I’m Sergio Allushaj, also known as Vantablack on social media. I’m a
-        front-end developer, graphic designer, and UX/UI designer from Italy. My
-        journey began with a passion for creating modern, responsive, and highly
-        functional websites, which has since grown to include blending
-        creativity with technology through UX/UI design and graphic design. As
-        an independent developer, I specialize in crafting innovative and
-        visually engaging solutions using HTML, CSS, JavaScript, PHP, React, and
-        SQL. I also leverage Adobe software and Figma for graphic design and
-        prototyping, ensuring exceptional user experiences in every project.
+        junior front-end developer and graphic designer from Italy. I started
+        with photography and graphic design, which sparked my passion for visual
+        communication. Over time, I shifted to web development, blending
+        creativity and technology. I now create modern, responsive websites
+        using HTML, CSS, JavaScript, and Next.js, while leveraging Adobe
+        software and Figma to craft intuitive and visually engaging user
+        experiences.
       </p>
 
       <a
