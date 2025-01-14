@@ -1,11 +1,8 @@
 "use client";
 
-import { useRef } from "react";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
 
 export default function Footer() {
-  const footerRef = useRef(null);
-
   return (
     <footer id="footer" className={`blocco ${NeutralFace.className}`}>
       <span
