@@ -2,12 +2,11 @@ import { useEffect } from "react";
 
 export default function LoadingVideo({ onLoaded }) {
   useEffect(() => {
-    // Automatically trigger the onLoaded function after the video ends or after a set duration
     const timer = setTimeout(() => {
-      onLoaded(); // Trigger when video has played for 5 seconds
-    }, 5000); // Adjust this to match your video duration
+      onLoaded();
+    }, 5000);
 
-    return () => clearTimeout(timer); // Clean up the timer
+    return () => clearTimeout(timer);
   }, [onLoaded]);
 
   return (

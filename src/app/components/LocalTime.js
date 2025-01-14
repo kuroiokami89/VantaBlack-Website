@@ -1,4 +1,3 @@
-// LocalTime.js
 import { useEffect, useState } from "react";
 
 const LocalTime = ({ timezone }) => {

@@ -1,5 +1,5 @@
 import ProjectItem from "./ProjectsItem";
-import { NeutralFace, NeutralFaceBold } from "./fonts";
+import { NeutralFace } from "./fonts";
 
 export default function Projects() {
   return (

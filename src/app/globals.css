@@ -268,76 +268,25 @@ a {
 }
 
 .project-1 {
-  background-image: url("./assets/foto/Vanta-GIF.gif");
+  background-image: url("/projects/VantaBlack-OLD.gif");
 }
 
 .project-2 {
-  background-image: url("./assets/foto/project-3.jpg");
+  background-image: url("/projects/BootstrapProject.jpg");
 }
 
 .project-3 {
-  background-image: url("./assets/foto/Rolex-Sky-Dweller.gif");
+  background-image: url("/projects/Kronos.gif");
 }
 
 .project-4 {
-  background-image: url("./assets/foto/g3.jpg");
+  background-image: url("/projects/");
 }
 
 .project-5 {
-  background-image: url("./assets/foto/g5.png");
+  background-image: url("/projects/");
 }
 /** FINE STILE PROJECTS **/
-
-/** PROJECTS 2 **/
-#projects2 {
-  margin: 200px 0;
-}
-
-.project2 {
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-  width: 33.3%;
-  height: 750px;
-  border: 1px solid white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 1.05%;
-}
-
-#projects2 h2 {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-
-.projects2-container {
-  display: flex;
-}
-
-.project2:hover {
-  opacity: 1;
-}
-
-.project2-2 {
-  background-image: url("./assets/foto/Rolex-Sky-Dweller.gif");
-}
-
-.project2-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.projects-button {
-  width: 100%;
-  font-size: 7rem;
-  border-bottom: 1px solid white;
-}
-
-/** FINE PRJECTS2 **/
 
 .button {
   z-index: 1;
@@ -447,118 +396,29 @@ a {
 }
 
 .skill-1 {
-  background-image: url("./assets/skills/front-end.jpg");
+  background-image: url("/skills/front-end.jpg");
   border-bottom: 0;
 }
 
 .skill-2 {
-  background-image: url("./assets/skills/ux-ui.jpg");
+  background-image: url("/skills/ux-ui.jpg");
   border-right: 0;
 }
 
 .skill-3 {
-  background-image: url("./assets/skills/video-editing.jpg");
+  background-image: url("/skills/video-editing.jpg");
   border-right: 0;
 }
 
 .skill-4 {
-  background-image: url("./assets/skills/graphic.jpeg");
+  background-image: url("/skills/graphic.jpeg");
 }
-
-/* ALL PROJECTS PAGE STYLE */
-#all-projects-container {
-  margin-top: 100px;
-  margin-bottom: 200px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.graphic {
-  border: solid 1px white;
-  height: 800px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-  transition: opacity 0.55s ease-in;
-  cursor: pointer;
-  padding: 20px;
-}
-
-.graphic:hover {
-  opacity: 1;
-}
-
-.graphic:nth-child(3n + 1) {
-  border-left: none;
-}
-
-.graphic:nth-child(3n) {
-  border-right: none;
-}
-
-.graphic-1 {
-  background-image: url("/foto/Vanta-GIF.gif");
-}
-
-.graphic-2 {
-  background-image: url("/foto/Rolex-Sky-Dweller.jpg");
-}
-
-.graphic-3 {
-  background-image: url("/foto/project-3.jpg");
-}
-
-.graphic-4 {
-  background-image: url("/graphics/los_muertos.jpg");
-}
-
-.graphic-5 {
-  background-image: url("/graphics/cover.jpeg");
-}
-
-.graphic-6 {
-  background-image: url("");
-}
-
-#graphic-page {
-  padding-top: 100px;
-  display: flex;
-  gap: 20px;
-}
-
-#graphic-page p {
-  flex: 0 0 35%;
-  position: sticky;
-  top: 100px;
-  align-self: flex-start;
-}
-
-#graphic-page .projects-list {
-  flex: 0 0 65%;
-  display: flex;
-  flex-direction: column;
-  gap: 250px;
-}
-
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 200px;
-}
-
-.projects-list img,
-.projects-list video {
-  width: 700px;
-  height: auto;
-}
+/* FINE SERVICES */
 
 /* ABOUT COMPONENT */
 #about {
   height: 100vh;
-  background-image: url("/Me-edited.png");
+  background-image: url("/ProfilePic.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;

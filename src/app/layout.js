@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "./globals.css"; // Ensure this contains your base styles
-import "./mediaquery.css"; // Add any responsive styles
-import "./fonts.css"; // Include your font styles
+import "./globals.css";
+import "./mediaquery.css";
+import "./fonts.css";
 import HeadComponent from "./components/HeadComponent";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Adjust this value as needed
+    }, 5000);
 
     return () => clearTimeout(timeout);
   }, []);

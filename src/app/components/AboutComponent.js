@@ -15,7 +15,6 @@ export default function AboutComponent() {
         software and Figma to craft intuitive and visually engaging user
         experiences.
       </p>
-
       <a
         className="link-btn link"
         href="/CV ALLUSHAJ SERGIO - ENG.pdf"
