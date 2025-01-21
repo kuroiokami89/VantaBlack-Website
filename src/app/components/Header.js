@@ -6,12 +6,12 @@ export default function Header() {
     <header id="header" className={`${NeutralFace.className}`}>
       <div className="header-container blocco">
         <div className="desktop-menu">
-          <a href="/">
-            <img src="/Logo VB WH.svg" alt="Logo" width={35} height={35} />
-          </a>
           <div id="time time-desktop">
             <LocalTime />
           </div>
+          <a href="/">
+            <img src="/Logo VB WH.svg" alt="Logo" width={35} height={35} />
+          </a>
           <div id="menu">
             <a href="#about">ABOUT</a>
             <a href="#services">SKILLS</a>
