@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import "./globals.css";
 import "./mediaquery.css";
 import "./fonts.css";
+import "./vb-font.css";
 import HeadComponent from "./components/HeadComponent";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

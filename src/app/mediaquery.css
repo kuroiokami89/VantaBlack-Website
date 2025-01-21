@@ -155,9 +155,9 @@
     gap: 50px;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent black */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Support for older browsers */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   #about p {
@@ -185,7 +185,13 @@
     display: block;
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #mobile-logo {
+    width: 30px;
+    height: 30px;
   }
 
   #header {
@@ -200,6 +206,14 @@
 
   .header-container {
     padding: 15px 0;
+  }
+
+  .header-container img {
+    margin-top: 0;
+  }
+
+  .intro-container {
+    gap: 25px;
   }
 
   #services {
@@ -248,6 +262,11 @@
 
   .skill-title {
     height: fit-content;
+  }
+
+  #time-desktop,
+  .desktop-menu {
+    display: none !important;
   }
 }
 

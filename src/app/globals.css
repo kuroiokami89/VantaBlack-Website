@@ -15,17 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Remove scrollbar space */
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
-/* Optional: show position indicator */
-::-webkit-scrollbar-thumb {
-  background: #ff0000;
-}
-
 /* Body styles */
 body {
   font-size: 14px;
@@ -44,6 +33,52 @@ body {
 ::-moz-selection {
   background-color: #faf9f6;
   color: #000;
+}
+
+/* Remove scrollbar space */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Optional: show position indicator */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+.button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+}
+
+.button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fc2f70;
+  transform-origin: center top;
+  transform: scaleY(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover::before {
+  transform-origin: center bottom;
+  transform: scaleY(1);
 }
 
 .blocco {
@@ -79,9 +114,9 @@ a {
   width: 100%;
   z-index: 99;
   transition: background-color 0.5s ease, opacity 0.3s ease-in-out;
-  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent black */
-  backdrop-filter: blur(10px); /* Blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Support for older browsers */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 #menu {
@@ -105,6 +140,14 @@ a {
   align-items: center;
   padding: 17px 0;
   margin-bottom: 0 !important;
+}
+
+.desktop-menu {
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 #time {
@@ -198,6 +241,11 @@ a {
   margin-left: 10px;
 }
 
+#title-img {
+  width: 100%;
+  padding-top: 50px;
+}
+
 .homepage-title {
   display: flex;
   flex-direction: column;
@@ -288,42 +336,7 @@ a {
 }
 /** FINE STILE PROJECTS **/
 
-.button {
-  z-index: 1;
-  position: relative;
-  font-size: inherit;
-  font-family: inherit;
-  color: white;
-  padding: 0.5em 1em;
-  outline: none;
-  border: none;
-  background-color: hsl(236, 32%, 26%);
-}
-
-.button::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fc2f70;
-  transform-origin: center top;
-  transform: scaleY(0);
-  transition: transform 0.25s ease-in-out;
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-.button:hover::before {
-  transform-origin: center bottom;
-  transform: scaleY(1);
-}
-
-/* INIZIO SERVICES */
+/* INIZIO STILE SERVICES */
 #services {
   margin-bottom: 200px;
   display: flex;
@@ -413,9 +426,9 @@ a {
 .skill-4 {
   background-image: url("/skills/graphic.jpeg");
 }
-/* FINE SERVICES */
+/* FINE STILE SERVICES */
 
-/* ABOUT COMPONENT */
+/* INIZIO STILE ABOUT */
 #about {
   height: 100vh;
   background-image: url("/ProfilePic.png");
@@ -451,6 +464,40 @@ a {
   text-align: justify;
 }
 
+.icon-Logo-VB-WH:before {
+  content: "\e900";
+  color: #fff;
+  font-size: 220px;
+}
+
 #about a {
   width: 20%;
+}
+/* FINE STILE ABOUT */
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+/* 2 columns */
+.grid-item--width2 {
+  width: 40%;
+}
+
+.grid-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item-2 {
+  background-image: url("/graphics/1.jpg");
+}
+
+.item-2 {
+  background-image: url("/graphics/2.png");
+}
+
+.item-3 {
+  background-image: url("/graphics/3.png");
 }

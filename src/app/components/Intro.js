@@ -31,6 +31,7 @@ export default function Intro() {
       <div className="intro-container">
         <div className="homepage-title">
           <h1 className="title">VANTABLACK</h1>
+          {/* <img id="title-img" src="/TITLE.png" /> */}
         </div>
         <p className={`${NeutralFace.className}`}>
           Italy-based, junior front-end developer with a strong foundation in

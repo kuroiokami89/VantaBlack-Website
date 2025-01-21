@@ -118,6 +118,10 @@ a,
   #about p {
     font-size: 1.1rem;
   }
+
+  .intro-container p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 991px) {

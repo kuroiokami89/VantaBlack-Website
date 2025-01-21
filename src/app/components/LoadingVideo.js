@@ -21,7 +21,7 @@ export default function LoadingVideo({ onLoaded }) {
       }}
     >
       <video
-        src="/Vantablack-Intro2.mp4"
+        src=""
         autoPlay
         muted
         onEnded={onLoaded} // Trigger when video ends
