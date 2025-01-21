@@ -9,7 +9,7 @@ export default function Header() {
           <div id="time time-desktop">
             <LocalTime />
           </div>
-          <a href="/">
+          <a href="#top">
             <img src="/Logo VB WH.svg" alt="Logo" width={35} height={35} />
           </a>
           <div id="menu">
