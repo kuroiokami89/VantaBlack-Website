@@ -30,7 +30,7 @@ export default function Projects() {
             h3Text="Kronos luxury watch e-shop"
           />
           <ProjectItem
-            link="https://vanta-black-website.vercel.app/graphic-projects"
+            link="/graphic-projects"
             imgClass="project-4"
             spanText="Graphic"
             h3Text="Graphic works"
