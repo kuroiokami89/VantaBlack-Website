@@ -1,32 +1,87 @@
 "use client";
 
-import { useEffect } from "react";
-import { NeutralFace } from "../components/fonts.js";
-import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+import { PhotoList } from "./PhotoList";
+import Masonry from "masonry-layout";
+import { NeutralFace } from "../components/fonts";
 
-// Dynamically import Masonry (only available on the client side)
-const Masonry = dynamic(() => import("masonry-layout"), { ssr: false });
-
-export default function GraphicProjectsPage() {
+export default function Gallery() {
   useEffect(() => {
-    const grid = document.querySelector(".grid");
-    if (grid) {
-      new Masonry(grid, {
-        // Set itemSelector so .grid-sizer is not used in layout
+    if (typeof window !== "undefined") {
+      // Only execute this code on the client side
+      const masonry = new Masonry("#gallery", {
         itemSelector: ".grid-item",
-        // Use element for option
         columnWidth: ".grid-sizer",
         percentPosition: true,
       });
+
+      const imgLoadPromises = Array.from(
+        document.querySelectorAll("#gallery img")
+      ).map(
+        (img) =>
+          new Promise((resolve) => {
+            img.onload = resolve;
+            img.onerror = resolve;
+          })
+      );
+
+      Promise.all(imgLoadPromises).then(() => {
+        masonry.layout();
+      });
+
+      return () => masonry.destroy();
     }
   }, []);
 
+  const [selectedImage, setSelectedImage] = useState(null); // State to track the clicked image
+  const [overlayVisible, setOverlayVisible] = useState(false);
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setOverlayVisible(true);
+  };
+
+  // Function to hide the overlay
+  const closeOverlay = () => {
+    setOverlayVisible(false);
+    setSelectedImage(null);
+  };
+
   return (
-    <div className="grid">
+    <div id="gallery" className={`${NeutralFace.className}`}>
       <div className="grid-sizer"></div>
-      <div className="grid-item item-1"></div>
-      <div className="grid-item grid-item--width2 item-2"></div>
-      <div className="grid-item grid-item--height2 item-3"></div>
+      {PhotoList.map((image, index) => (
+        <div
+          className="grid-item"
+          key={index}
+          onClick={() => handleImageClick(image)}
+        >
+          <img src={image.url} alt={`Image ${index + 1}`} />
+        </div>
+      ))}
+      {/* Overlay */}
+      {overlayVisible && (
+        <div
+          onClick={closeOverlay}
+          className={`overlay ${NeutralFace.className}`}
+        >
+          <button className="close-button" onClick={closeOverlay}>
+            X
+          </button>
+          <div className="overlay-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage.url} alt="Selected" />
+            <div className="overlay-content-text">
+              <h2 className={`${NeutralFace.className}`}>
+                {selectedImage.description}
+              </h2>
+              <div className="overlay-list">
+                <span>{selectedImage.device}</span>
+                <span>{selectedImage.location}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

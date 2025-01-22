@@ -29,6 +29,12 @@ export default function Projects() {
             spanText="Ecommerce website"
             h3Text="Kronos luxury watch e-shop"
           />
+          <ProjectItem
+            link="https://vanta-black-website.vercel.app/graphic-projects"
+            imgClass="project-4"
+            spanText="Graphic"
+            h3Text="Graphic works"
+          />
         </div>
       </div>
     </div>
