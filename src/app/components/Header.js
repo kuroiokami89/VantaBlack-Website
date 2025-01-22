@@ -13,9 +13,9 @@ export default function Header() {
             <img src="/Logo VB WH.svg" alt="Logo" width={35} height={35} />
           </a>
           <div id="menu">
-            <a href="#about">ABOUT</a>
+            {/* <a href="#about">ABOUT</a>
             <a href="#services">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
+            <a href="#projects">PROJECTS</a> */}
             <a href="#footer">CONTACT</a>
           </div>
         </div>
