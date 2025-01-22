@@ -32,7 +32,7 @@ export default function Projects() {
           <ProjectItem
             link="/graphic-projects"
             imgClass="project-4"
-            spanText="Graphic"
+            spanText="Graphics"
             h3Text="Graphic works"
           />
         </div>
