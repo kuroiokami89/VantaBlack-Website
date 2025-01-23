@@ -2,38 +2,46 @@
 
 import { useEffect, useState } from "react";
 import { PhotoList } from "./PhotoList";
-import Masonry from "masonry-layout";
 import { NeutralFace } from "../components/fonts";
 
 export default function Gallery() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Only execute this code on the client side
-      const masonry = new Masonry("#gallery", {
-        itemSelector: ".grid-item",
-        columnWidth: ".grid-sizer",
-        percentPosition: true,
-      });
+    let Masonry; // Variabile per il modulo Masonry
+    let masonry;
 
-      const imgLoadPromises = Array.from(
-        document.querySelectorAll("#gallery img")
-      ).map(
-        (img) =>
-          new Promise((resolve) => {
-            img.onload = resolve;
-            img.onerror = resolve;
-          })
-      );
+    const initMasonry = async () => {
+      if (typeof window !== "undefined") {
+        // Importa Masonry solo lato client
+        Masonry = (await import("masonry-layout")).default;
 
-      Promise.all(imgLoadPromises).then(() => {
-        masonry.layout();
-      });
+        masonry = new Masonry("#gallery", {
+          itemSelector: ".grid-item",
+          columnWidth: ".grid-sizer",
+          percentPosition: true,
+        });
 
-      return () => masonry.destroy();
-    }
+        const imgLoadPromises = Array.from(
+          document.querySelectorAll("#gallery img")
+        ).map(
+          (img) =>
+            new Promise((resolve) => {
+              img.onload = resolve;
+              img.onerror = resolve;
+            })
+        );
+
+        Promise.all(imgLoadPromises).then(() => {
+          masonry.layout();
+        });
+      }
+    };
+
+    initMasonry();
+
+    return () => masonry && masonry.destroy(); // Distruggi Masonry al momento dello smontaggio
   }, []);
 
-  const [selectedImage, setSelectedImage] = useState(null); // State to track the clicked image
+  const [selectedImage, setSelectedImage] = useState(null);
   const [overlayVisible, setOverlayVisible] = useState(false);
 
   const handleImageClick = (image) => {
@@ -41,7 +49,6 @@ export default function Gallery() {
     setOverlayVisible(true);
   };
 
-  // Function to hide the overlay
   const closeOverlay = () => {
     setOverlayVisible(false);
     setSelectedImage(null);
@@ -59,7 +66,6 @@ export default function Gallery() {
           <img src={image.url} alt={`Image ${index + 1}`} />
         </div>
       ))}
-      {/* Overlay */}
       {overlayVisible && (
         <div
           onClick={closeOverlay}
