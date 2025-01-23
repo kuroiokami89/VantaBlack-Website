@@ -142,4 +142,8 @@ a,
   #footer .section-title a {
     font-size: 4.3rem;
   }
+
+  .close-button {
+    font-size: 3rem !important;
+  }
 }
