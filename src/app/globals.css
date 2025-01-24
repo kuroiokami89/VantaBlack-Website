@@ -505,6 +505,7 @@ a {
 /* INIZIO STILE GALLERIA */
 #gallery {
   margin-top: 70px;
+  margin-bottom: 200px;
   position: relative;
 }
 
@@ -538,7 +539,10 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 1);
+  transition: background-color 0.5s ease, opacity 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,7 +551,6 @@ a {
 
 .overlay-content {
   position: relative;
-  padding: 20px;
   max-width: 80%;
   max-height: 80%;
   text-align: center;
@@ -556,7 +559,7 @@ a {
 }
 
 .overlay-content img {
-  max-width: 850px;
+  max-width: 750px;
   max-height: 100%;
 }
 
@@ -573,10 +576,10 @@ a {
 }
 
 .close-button {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 13px;
+  right: 57px;
   color: white;
   background-color: transparent;
   border: none;

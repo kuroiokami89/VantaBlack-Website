@@ -76,7 +76,7 @@ export default function Gallery() {
           </button>
           <div className="overlay-content" onClick={(e) => e.stopPropagation()}>
             <img src={selectedImage.url} alt="Selected" />
-            <div className="overlay-content-text">
+            {/* <div className="overlay-content-text">
               <h2 className={`${NeutralFace.className}`}>
                 {selectedImage.description}
               </h2>
@@ -84,7 +84,7 @@ export default function Gallery() {
                 <span>{selectedImage.device}</span>
                 <span>{selectedImage.location}</span>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       )}
