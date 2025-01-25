@@ -511,8 +511,8 @@ a {
 
 .grid-sizer,
 .grid-item {
-  width: 33.33vw; /* Each item occupies one-third of the viewport width */
-  float: left; /* Ensure items are floated next to each other */
+  width: 50vw;
+  float: left;
 }
 
 .grid-item img {
@@ -522,16 +522,16 @@ a {
 }
 
 .grid-item {
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: opacity 0.55s ease-in;
 }
 
-.grid-item:hover {
+/* .grid-item:hover {
   opacity: 0.5;
 }
 
 .grid-item img:hover {
-}
+} */
 
 .overlay {
   position: fixed;

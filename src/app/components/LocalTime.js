@@ -29,7 +29,7 @@ const LocalTime = ({ timezone }) => {
 
   return (
     <>
-      <p id="time">{time} , GMT+1</p>
+      <p id="time">{time} , IT</p>
     </>
   );
 };

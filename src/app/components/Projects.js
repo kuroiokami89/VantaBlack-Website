@@ -16,10 +16,10 @@ export default function Projects() {
             h3Text="Vantablack portfolio (OLD VERSION)"
           />
           <ProjectItem
-            link="http://sapphire.altervista.org/"
-            imgClass="project-2"
-            spanText="Bootstrap website"
-            h3Text="Exercise website"
+            link="/graphic-projects"
+            imgClass="project-4"
+            spanText="Graphics"
+            h3Text="Graphic works"
           />
         </div>
         <div className="project-list-right">
@@ -30,10 +30,10 @@ export default function Projects() {
             h3Text="Kronos luxury watch e-shop"
           />
           <ProjectItem
-            link="/graphic-projects"
-            imgClass="project-4"
-            spanText="Graphics"
-            h3Text="Graphic works"
+            link="http://sapphire.altervista.org/"
+            imgClass="project-2"
+            spanText="Bootstrap website"
+            h3Text="Exercise website"
           />
         </div>
       </div>
