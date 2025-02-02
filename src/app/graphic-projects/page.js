@@ -66,6 +66,13 @@ export default function Gallery() {
           <img src={image.url} alt={`Image ${index + 1}`} />
         </div>
       ))}
+      <div className="grid-item">
+        <video autoPlay>
+          <source src="/projects/Halloween Skeleton.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       {/* {overlayVisible && (
         <div
           onClick={closeOverlay}

@@ -15,13 +15,13 @@ export default function AboutComponent() {
         software and Figma to craft intuitive and visually engaging user
         experiences.
       </p>
-      <a
+      {/* <a
         className="link-btn link"
         href="/cv/CV ALLUSHAJ SERGIO - ENG.pdf"
         download
       >
         DOWNLOAD CV (ENG)
-      </a>
+      </a> */}
       <a className="link-btn link" href="/cv/CV ALLUSHAJ SERGIO.pdf" download>
         DOWNLOAD CV (ITA)
       </a>
