@@ -42,6 +42,12 @@ export const PhotoList = [
     location: "Botanical Garden",
   },
   {
+    url: "/projects/VSC Mockup.png",
+    description: "A panoramic shot of the desert.",
+    device: "GoPro",
+    location: "Sahara Desert",
+  },
+  {
     url: "/foto/4.jpg",
     description: "A busy city street at night.",
     device: "Canon",
