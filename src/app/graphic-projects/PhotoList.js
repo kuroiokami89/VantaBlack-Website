@@ -71,8 +71,15 @@ export const PhotoList = [
     device: "Sony Alpha",
     location: "Black Forest, Germany",
   },
+
+  // {
+  //   url: "/foto/13.svg",
+  //   description: "A panoramic shot of the desert.",
+  //   device: "GoPro",
+  //   location: "Sahara Desert",
+  // },
   {
-    url: "/foto/9.png",
+    url: "/foto/14.svg",
     description: "A panoramic shot of the desert.",
     device: "GoPro",
     location: "Sahara Desert",
