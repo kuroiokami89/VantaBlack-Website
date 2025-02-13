@@ -2,6 +2,7 @@
 
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import Projects2 from "./components/Projects2";
 import Services from "./components/Services";
 import AboutComponent from "./components/AboutComponent";
 
@@ -11,7 +12,7 @@ export default function Home() {
       <Intro />
       <AboutComponent />
       <Services />
-      <Projects />
+      <Projects2 />
     </>
   );
 }

@@ -42,12 +42,20 @@ a,
   font-size: 4rem !important;
 }
 
+.prj-text h3 {
+  font-size: 50px !important;
+}
+
+.prj-text span {
+  font-size: 1.3rem !important;
+}
+
 #footer .section-title a {
   font-size: 22.75rem;
 }
 
-.project2 span {
-  font-size: 1.25rem;
+.prj-text span {
+  font-size: 1.15rem !important;
 }
 
 @media screen and (max-width: 1450px) {
@@ -57,11 +65,15 @@ a,
   }
 
   .title {
-    font-size: 12rem !important;
+    font-size: 11.7rem !important;
+  }
+
+  .intro-container p {
+    font-size: 1.1rem;
   }
 
   #footer .section-title a {
-    font-size: 16.9rem;
+    font-size: 16rem;
   }
 
   h2 {
@@ -75,6 +87,11 @@ a,
 
   .email {
     font-size: 12rem;
+  }
+
+  .prj-text h3 {
+    font-size: 33px !important;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -140,10 +157,19 @@ a,
   }
 
   #footer .section-title a {
-    font-size: 4.3rem;
+    font-size: 4.15rem;
   }
 
   .close-button {
     font-size: 3rem !important;
+  }
+
+  #projects2 h2 {
+    font-size: 3rem !important;
+  }
+
+  .prj-text h3 {
+    font-size: 2.3rem !important;
+    margin-bottom: 0 !important;
   }
 }

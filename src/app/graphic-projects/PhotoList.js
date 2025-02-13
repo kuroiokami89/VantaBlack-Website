@@ -42,12 +42,6 @@ export const PhotoList = [
     location: "Swiss Alps",
   },
   {
-    url: "/foto/17.gif",
-    description: "A scenic view of the mountains.",
-    device: "DSLR",
-    location: "Swiss Alps",
-  },
-  {
     url: "/foto/2.jpg",
     description: "Sunset at the beach.",
     device: "iPhone",
@@ -89,13 +83,6 @@ export const PhotoList = [
     device: "Sony Alpha",
     location: "Black Forest, Germany",
   },
-
-  // {
-  //   url: "/foto/13.svg",
-  //   description: "A panoramic shot of the desert.",
-  //   device: "GoPro",
-  //   location: "Sahara Desert",
-  // },
   {
     url: "/foto/14.svg",
     description: "A panoramic shot of the desert.",
