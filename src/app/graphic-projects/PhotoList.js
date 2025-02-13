@@ -30,6 +30,24 @@ export const PhotoList = [
     location: "Swiss Alps",
   },
   {
+    url: "/foto/15.png",
+    description: "A scenic view of the mountains.",
+    device: "DSLR",
+    location: "Swiss Alps",
+  },
+  {
+    url: "/foto/16.png",
+    description: "A scenic view of the mountains.",
+    device: "DSLR",
+    location: "Swiss Alps",
+  },
+  {
+    url: "/foto/17.gif",
+    description: "A scenic view of the mountains.",
+    device: "DSLR",
+    location: "Swiss Alps",
+  },
+  {
     url: "/foto/2.jpg",
     description: "Sunset at the beach.",
     device: "iPhone",
