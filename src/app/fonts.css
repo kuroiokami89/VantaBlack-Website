@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 h1 {
-  font-size: 9rem;
+  font-size: 16.1rem;
   line-height: 0.9;
 }
 
@@ -14,9 +14,9 @@ h3 {
   font-size: 25px !important;
 }
 
-.title {
-  font-size: 16.65rem;
-}
+/* .title {
+  font-size: 20rem;
+} */
 
 p {
   font-weight: 100;
@@ -51,7 +51,7 @@ a,
 }
 
 #footer .section-title a {
-  font-size: 22.75rem;
+  font-size: 22rem;
 }
 
 .prj-text span {
