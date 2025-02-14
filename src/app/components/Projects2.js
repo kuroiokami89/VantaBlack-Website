@@ -49,13 +49,13 @@ export default function Projects2() {
             <h3 className={`${NeutralFace.className}`}>GRAPHICS WORK</h3>
           </div>
         </a>
-        <a href="http://sapphire.altervista.org/" className="prj prj-4">
+        {/* <a href="http://sapphire.altervista.org/" className="prj prj-4">
           <div className="prj-img"></div>
           <div className="prj-text">
             <span className={`${NeutralFace.className}`}>WEBSITE</span>
             <h3 className={`${NeutralFace.className}`}>BOOTSTRAP WEBSITE</h3>
           </div>
-        </a>
+        </a> */}
       </div>
     </div>
   );
