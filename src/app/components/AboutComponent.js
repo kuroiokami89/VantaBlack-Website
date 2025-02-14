@@ -6,13 +6,12 @@ export default function AboutComponent() {
   return (
     <div id="about" className={`${NeutralFace.className}`}>
       <p>
-        Hi, I’m Sergio Allushaj, also known as Vantablack on social media. I’m a
-        junior front-end developer and graphic designer from Italy. I started
-        with photography and graphic design, which sparked my passion for visual
-        communication. Over time, I shifted to web development, blending
-        creativity and technology. I now create modern, responsive websites
-        using HTML, CSS, JavaScript, and Next.js, while leveraging Adobe
-        software and Figma to craft intuitive and visually engaging user
+        Hi, I’m Sergio Allushaj, aka Vantablack, a junior front-end developer
+        and graphic designer from Italy. Starting with photography and graphic
+        design, I discovered my passion for visual storytelling. Now, I focus on
+        building modern, responsive websites using HTML, CSS, JavaScript, and
+        Next.js, while designing intuitive interfaces with Adobe Creative Suite
+        and Figma. My goal is to create functional, visually appealing digital
         experiences.
       </p>
       {/* <a

@@ -34,9 +34,9 @@ export default function Intro() {
           {/* <img id="title-img" src="/TITLE.png" /> */}
         </div>
         <p className={`${NeutralFace.className}`}>
-          Italy-based, junior front-end developer with a strong foundation in
-          responsive design and UX/UI principles. Passionate about crafting
-          user-friendly, visually engaging, and impactful web experiences.
+          Italy-based junior front-end developer skilled in responsive design
+          and UX/UI. Passionate about crafting user-friendly, visually impactful
+          web experiences.
         </p>
         <a href="#about" className={`${NeutralFace.className}`}>
           SEE MORE ABOUT ME

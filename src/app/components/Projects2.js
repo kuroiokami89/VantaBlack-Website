@@ -17,6 +17,18 @@ export default function Projects2() {
             <h3 className={`${NeutralFace.className}`}>VANTABLACK PORTFOLIO</h3>
           </div>
         </a>
+        <a
+          href="https://www.figma.com/design/geHeoJJUyNJfAzgMKroU15/Kronos--2.0---Ecommerce?node-id=0-1&t=aUKnXH3w3MON96t7-1"
+          className="prj prj-5"
+        >
+          <div className="prj-img"></div>
+          <div className="prj-text">
+            <span className={`${NeutralFace.className}`}>FIGMA PROJECT</span>
+            <h3 className={`${NeutralFace.className}`}>
+              KRONOS FIGMA PROTOTYPE
+            </h3>
+          </div>
+        </a>
         <a href="https://vanta-black-kronos.vercel.app/" className="prj prj-2">
           <div className="prj-img"></div>
           <div className="prj-text">
