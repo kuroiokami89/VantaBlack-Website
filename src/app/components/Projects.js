@@ -1,47 +1,54 @@
-import ProjectItem from "./ProjectsItem";
 import { NeutralFace } from "./fonts";
 
-export default function Projects() {
+export default function Projects2() {
   return (
-    <div id="projects" className="blocco">
+    <div id="projects2">
       <div className="section-title">
         <h2 className={`${NeutralFace.className}`}>PROJECTS</h2>
       </div>
-      <div className="project-container">
-        <div className="project-list-left">
-          <ProjectItem
-            link="https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/"
-            imgClass="project-1"
-            spanText="Portfolio Website"
-            h3Text="Vantablack portfolio (OLD VERSION)"
-          />
-          <ProjectItem
-            link="https://vanta-black-versi-senza-confini.vercel.app/"
-            imgClass="project-5"
-            spanText="Website"
-            h3Text="Versi Senza Confini"
-          />
-          <ProjectItem
-            link="http://sapphire.altervista.org/"
-            imgClass="project-2"
-            spanText="Bootstrap website"
-            h3Text="Exercise website"
-          />
-        </div>
-        <div className="project-list-right">
-          <ProjectItem
-            link="https://vanta-black-kronos.vercel.app/"
-            imgClass="project-3"
-            spanText="Ecommerce website"
-            h3Text="Kronos luxury watch e-shop"
-          />
-          <ProjectItem
-            link="/graphic-projects"
-            imgClass="project-4"
-            spanText="Graphics"
-            h3Text="Graphic works"
-          />
-        </div>
+      <div className="container">
+        <a
+          href="https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/"
+          className="prj prj-1"
+        >
+          <div className="prj-img"></div>
+          <div className="prj-text">
+            <span className={`${NeutralFace.className}`}>WEBSITE</span>
+            <h3 className={`${NeutralFace.className}`}>VANTABLACK PORTFOLIO</h3>
+          </div>
+        </a>
+        <a
+          href="https://www.figma.com/design/geHeoJJUyNJfAzgMKroU15/Kronos--2.0---Ecommerce?node-id=0-1&t=aUKnXH3w3MON96t7-1"
+          className="prj prj-5"
+        >
+          <div className="prj-img"></div>
+          <div className="prj-text">
+            <span className={`${NeutralFace.className}`}>FIGMA PROJECT</span>
+            <h3 className={`${NeutralFace.className}`}>
+              KRONOS FIGMA PROTOTYPE
+            </h3>
+          </div>
+        </a>
+        <a href="https://vanta-black-kronos.vercel.app/" className="prj prj-2">
+          <div className="prj-img"></div>
+          <div className="prj-text">
+            <span className={`${NeutralFace.className}`}>
+              E-COMMERCE WEBSITE
+            </span>
+            <h3 className={`${NeutralFace.className}`}>
+              KRONOS LUXURY WATCH SHOP
+            </h3>
+          </div>
+        </a>
+        <a href="/graphic-projects" className="prj prj-3">
+          <div className="prj-img"></div>
+          <div className="prj-text">
+            <span className={`${NeutralFace.className}`}>
+              GRAPHIC PORTFOLIO
+            </span>
+            <h3 className={`${NeutralFace.className}`}>GRAPHICS WORK</h3>
+          </div>
+        </a>
       </div>
     </div>
   );

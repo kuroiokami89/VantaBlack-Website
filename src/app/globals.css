@@ -81,7 +81,7 @@ body {
   transform: scaleY(1);
 }
 
-.blocco {
+.block-margins {
   margin: 0 1.5%;
   margin-bottom: 100px !important;
 }
@@ -181,6 +181,12 @@ a {
   gap: 30px;
 }
 
+.email-heading {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 1.75rem;
+  margin-bottom: 0 !important;
+}
+
 .email {
   color: rgba(255, 255, 255, 0.45);
   font-size: 25rem;
@@ -198,17 +204,25 @@ a {
 
 #footer span {
   text-align: center;
-  margin-bottom: 20px !important;
+}
+
+#footer .section-title {
+  position: relative;
 }
 
 .social-links span {
-  font-size: 1.1rem !important;
+  font-size: 1.25rem !important;
 }
 
 .social-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0 !important;
+}
+
+.copywright {
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 20px !important;
 }
 /** FINE STILE FOOTER **/
 

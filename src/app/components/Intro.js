@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { NeutralFace, NeutralFaceBold, AvertaBold, TT } from "./fonts";
+import { NeutralFace, NeutralFaceBold } from "./fonts";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -24,14 +24,13 @@ export default function Intro() {
   return (
     <div
       id="intro"
-      className={`blocco ${NeutralFaceBold.className}`}
+      className={`block-margins ${NeutralFaceBold.className}`}
       ref={introRef}
       style={{ opacity: 0 }}
     >
       <div className="intro-container">
         <div className="homepage-title">
           <h1 className="title">VANTABLACK</h1>
-          {/* <img id="title-img" src="/TITLE.png" /> */}
         </div>
         <p className={`${NeutralFace.className}`}>
           Italy-based junior front-end developer skilled in responsive design

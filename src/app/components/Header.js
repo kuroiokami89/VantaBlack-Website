@@ -4,13 +4,19 @@ import LocalTime from "./LocalTime";
 export default function Header() {
   return (
     <header id="header" className={`${NeutralFace.className}`}>
-      <div className="header-container blocco">
+      <div className="header-container block-margins">
         <div className="desktop-menu">
           <div id="time time-desktop">
             <LocalTime />
           </div>
           <a href="/">
-            <img src="/Logo VB WH.svg" alt="Logo" width={35} height={35} />
+            <img
+              id="logo"
+              src="/Logo VB WH.svg"
+              alt="Logo"
+              width={35}
+              height={35}
+            />
           </a>
           <div id="menu">
             <a href="#footer">CONTACT</a>
