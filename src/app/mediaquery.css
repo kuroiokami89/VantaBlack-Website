@@ -5,7 +5,7 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .blocco,
+  .block-margins,
   #footer {
     margin: 0 2%;
   }
@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .blocco,
+  .block-margins,
   #footer {
     margin: 0 5%;
   }
@@ -113,7 +113,7 @@
     cursor: auto;
   }
 
-  .blocco {
+  .block-margins {
     margin-bottom: 150px !important;
     margin: 0 20px;
   }
@@ -149,7 +149,7 @@
   }
 
   #footer,
-  #footer .blocco {
+  #footer .block-margins {
     margin-bottom: 0 !important;
   }
 
@@ -204,7 +204,7 @@
     justify-content: space-between;
   }
 
-  #header .blocco {
+  #header .block-margins {
     margin-bottom: 0 !important;
   }
 
