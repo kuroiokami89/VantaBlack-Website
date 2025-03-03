@@ -5,8 +5,7 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .block-margins,
-  #footer {
+  .block-margins {
     margin: 0 15px;
   }
 
@@ -26,6 +25,10 @@
   .intro-container p,
   #about p {
     width: 35%;
+  }
+
+  .project-itme {
+    height: 500px;
   }
 }
 
