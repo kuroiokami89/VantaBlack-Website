@@ -181,23 +181,6 @@ a {
   gap: 30px;
 }
 
-.email-heading {
-  color: rgba(255, 255, 255, 0.45);
-  font-size: 1.75rem;
-  margin-bottom: 0 !important;
-}
-
-.email {
-  color: rgba(255, 255, 255, 0.45);
-  font-size: 25rem;
-  width: fit-content;
-  cursor: pointer;
-}
-
-.email:hover {
-  color: white;
-}
-
 #footer a {
   cursor: pointer;
 }
@@ -283,7 +266,7 @@ a {
   padding: 15px;
   display: flex;
   align-items: flex-end;
-  height: 450px;
+  height: 400px;
   width: 32.5%;
   background-position: center;
   background-size: cover;
@@ -522,10 +505,6 @@ a {
 }
 
 /* FINE STILE GALLERIA */
-#projects {
-  margin-bottom: 50px;
-}
-
 #projects .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -610,4 +589,18 @@ a {
 
 .itme-2 {
   background-image: url("/foto/18.png");
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 15px;
+  border-bottom: 1px solid white;
+  margin-bottom: 25px;
+}
+
+.email:hover {
+  color: white;
 }

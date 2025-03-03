@@ -39,7 +39,7 @@ export default function Projects() {
         </a>
         <a href="/graphic-projects" className="project-itme itme-4">
           <div className="spans">
-            <span>2024</span>
+            <span>2025</span>
             <span>PORTFOLIO</span>
           </div>
           <h3>GRAPHIC WORKS</h3>
