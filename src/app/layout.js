@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <HeadComponent />
       <body>
+        {/* DECOMMENT IF YOU WANT TO PLAY A VIDEO BEFORE THE WEBSITE RENDER */}
         {/* {loading ? (
           <LoadingVideo onLoaded={handleLoaded} />
         ) : (

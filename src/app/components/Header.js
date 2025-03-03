@@ -1,9 +1,9 @@
-import { NeutralFace } from "./fonts";
+import { NeutralFace, OrbitronLight } from "./fonts";
 import LocalTime from "./LocalTime";
 
 export default function Header() {
   return (
-    <header id="header" className={`${NeutralFace.className}`}>
+    <header id="header" className={`${OrbitronLight.className}`}>
       <div className="header-container block-margins">
         <div className="desktop-menu">
           <div id="time time-desktop">

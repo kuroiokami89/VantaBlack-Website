@@ -16,4 +16,24 @@ const TT = localFont({
   src: "../fonts/TT-Hoves-Pro-Trial-Regular.ttf",
 });
 
-export { NeutralFace, NeutralFaceBold, AvertaBold, TT };
+const Kusanagi = localFont({
+  src: "../fonts/Kusanagi.otf",
+});
+
+const Orbitron = localFont({
+  src: "../fonts/Orbitron Black.otf",
+});
+
+const OrbitronLight = localFont({
+  src: "../fonts/Orbitron Light.otf",
+});
+
+export {
+  NeutralFace,
+  NeutralFaceBold,
+  AvertaBold,
+  TT,
+  Kusanagi,
+  Orbitron,
+  OrbitronLight,
+};

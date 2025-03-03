@@ -1,10 +1,10 @@
-import { NeutralFace } from "./fonts";
+import { NeutralFace, Kusanagi, OrbitronLight } from "./fonts";
 
 export default function Services() {
   return (
-    <div id="services" className={`${NeutralFace.className}`}>
+    <div id="services" className={`${OrbitronLight.className}`}>
       <div className="skill-title">
-        <h2>My skills</h2>
+        <h2 className={`${Kusanagi.className}`}>My skills</h2>
       </div>
       <div className="skill skill-1">
         <h3>Front-end development</h3>

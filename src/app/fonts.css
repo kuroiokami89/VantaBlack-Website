@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+/* Base Typography */
 h1 {
-  font-size: 16.5rem;
+  font-size: 12.65rem;
   line-height: 0.9;
 }
 
@@ -11,17 +10,19 @@ h2 {
 }
 
 h3 {
+  text-transform: uppercase;
   font-size: 25px !important;
 }
 
-/* .title {
-  font-size: 20rem;
-} */
-
 p {
+  text-transform: uppercase;
   font-weight: 100;
   font-size: 1.25rem;
   line-height: 1.6;
+}
+
+#about p {
+  font-size: 1.35rem !important;
 }
 
 .intro-container p {
@@ -34,30 +35,21 @@ a,
   background: transparent;
 }
 
-#services h3 {
-  font-size: 2.5rem !important;
+/* Specific Element Styles */
+#services h3,
+.project-item h3 {
+  font-size: 2.2rem !important;
 }
 
 .skill-title h3 {
   font-size: 4rem !important;
 }
 
-.prj-text h3 {
-  font-size: 50px !important;
-}
-
-.prj-text span {
-  font-size: 1.3rem !important;
-}
-
 #footer .section-title a {
   font-size: 22.65rem;
 }
 
-.prj-text span {
-  font-size: 1.15rem !important;
-}
-
+/* Responsive Breakpoints */
 @media screen and (max-width: 1450px) {
   h1 {
     font-size: 5rem;
@@ -65,7 +57,7 @@ a,
   }
 
   .title {
-    font-size: 11.7rem !important;
+    font-size: 8.6rem !important;
   }
 
   .intro-container p {
@@ -77,7 +69,7 @@ a,
   }
 
   h2 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     line-height: 1.05;
   }
 
@@ -101,47 +93,7 @@ a,
   }
 }
 
-@media screen and (max-width: 768px) {
-  .title {
-    line-height: 50px;
-    font-size: 3rem !important;
-  }
-
-  h2 {
-    font-size: 3rem !important;
-    line-height: unset;
-    line-height: 1.1;
-  }
-
-  h3 {
-    font-size: 1.5rem !important;
-    line-height: unset;
-    margin-bottom: 20px !important;
-  }
-
-  p {
-    font-size: 1.3rem;
-  }
-
-  .social-links span {
-    font-size: 1rem !important;
-  }
-
-  #footer .section-title a {
-    text-align: left;
-    font-size: 7rem;
-  }
-
-  #about p {
-    font-size: 1.1rem;
-  }
-
-  .intro-container p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .title {
     font-size: 6.3rem !important;
   }
@@ -153,11 +105,39 @@ a,
 
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 3.2rem !important;
+    font-size: 2.5rem !important;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: 2.7rem !important;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 2.2rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .social-links span {
+    font-size: 1rem !important;
   }
 
   #footer .section-title a {
     font-size: 4.15rem;
+    text-align: left;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+
+  .intro-container p {
+    font-size: 1rem;
   }
 
   .close-button {

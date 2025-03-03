@@ -82,7 +82,7 @@ body {
 }
 
 .block-margins {
-  margin: 0 1.5%;
+  margin: 0 15px;
   margin-bottom: 100px !important;
 }
 
@@ -168,6 +168,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 0 !important;
+  padding: 0 15px;
 }
 
 #footer .section-title {
@@ -270,86 +271,6 @@ a {
 }
 /** FINE STILE INTRO **/
 
-/** STILE PROJECTS **/
-#projects {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.project-list-left,
-.project-list-right {
-  display: flex;
-  flex-direction: column;
-  row-gap: 100px;
-}
-
-.project-list-right {
-  margin-top: 400px;
-}
-
-#projects .title-work {
-  margin-bottom: 100px;
-}
-
-.project-text {
-  display: flex;
-  flex-direction: column;
-  margin-top: 35px;
-  gap: 4px;
-}
-
-.project-text span {
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 1.15rem;
-  margin-bottom: 7px;
-}
-
-.project-img {
-  width: 840px;
-  height: 750px;
-  background-position: center;
-  background-size: cover;
-  transition: opacity 0.8s ease-in-out;
-}
-
-.project {
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0.5;
-  transition: opacity 0.8s ease-in-out;
-}
-
-.project:hover {
-  opacity: 1;
-}
-
-.project-1 {
-  background-image: url("/projects/VantaBlack-OLD.gif");
-}
-
-.project-2 {
-  background-image: url("/projects/BootstrapProject.jpg");
-}
-
-.project-3 {
-  background-image: url("/projects/Kronos.gif");
-}
-
-.project-4 {
-  background-image: url("/foto/12.jpg");
-}
-
-.project-5 {
-  background-image: url("/projects/VSC Mockup.png");
-}
-/** FINE STILE PROJECTS **/
-
 /* INIZIO STILE SERVICES */
 #services {
   margin-bottom: 50px;
@@ -360,7 +281,7 @@ a {
 .skill,
 .skill-title {
   border: 1px solid white;
-  padding: 1.5%;
+  padding: 15px;
   display: flex;
   align-items: flex-end;
   height: 450px;
@@ -527,8 +448,8 @@ a {
 .grid-item {
   width: 50vw;
   float: left;
-  position: relative; /* Ensure proper positioning for child elements */
-  overflow: hidden; /* Hide overflow to prevent layout issues */
+  position: relative;
+  overflow: hidden;
 }
 
 .grid-item img {
@@ -538,22 +459,14 @@ a {
 }
 
 .grid-item video {
-  width: 100%; /* Make the video fill the width of the grid item */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Ensure the video is treated as a block element */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .grid-item {
-  /* cursor: pointer; */
   transition: opacity 0.55s ease-in;
 }
-
-/* .grid-item:hover {
-  opacity: 0.5;
-}
-
-.grid-item img:hover {
-} */
 
 .overlay {
   position: fixed;
@@ -610,76 +523,92 @@ a {
 }
 
 /* FINE STILE GALLERIA */
-#projects2 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-bottom: 1px solid white;
+#projects {
   margin-bottom: 50px;
 }
 
-#projects2 h2 {
-  padding-bottom: 50px;
+#projects .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid white;
 }
 
-.prj {
-  flex: 0 0 50%;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0.5;
-  transition: opacity 0.8s ease-in-out;
-  position: relative;
-  border-top: 1px solid white;
+#projects .section-title {
+  padding: 0 15px;
+  margin-bottom: 50px;
 }
 
-.prj:hover {
-  opacity: 1;
-}
-
-.prj:nth-child(odd) {
-  border-right: 1px solid white;
-}
-
-.prj-img {
-  height: 750px;
-  background-position: center;
-  background-size: cover;
-  transition: opacity 0.8s ease-in-out;
-  background-repeat: no-repeat;
-}
-
-.prj-text {
-  border-top: 1px solid white;
-  position: absolute;
-  z-index: 1;
-  bottom: 0px;
+.project-itme {
+  border: 1px solid white;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  padding: 15px 1.5%;
+  justify-content: space-between;
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spans {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.spans span {
+  font-size: 1.25rem;
+}
+
+.project-itme:nth-child(odd) {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.project-itme:nth-child(even) {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.project-itme::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 0;
+  transition: opacity 0.6s ease-in;
 }
 
-.prj-text span {
-  color: rgba(255, 255, 255, 0.65);
+.project-itme:hover::before {
+  opacity: 0.65;
 }
 
-.prj-1 .prj-img {
+.project-itme h3,
+.project-itme span {
+  position: relative;
+  z-index: 1;
+}
+
+.itme-1 {
   background-image: url("/projects/VantaBlack-OLD.gif");
 }
 
-.prj-2 .prj-img {
+.itme-3 {
   background-image: url("/projects/Kronos.gif");
 }
 
-.prj-3 .prj-img {
+.itme-4 {
   background-image: url("/projects/VantaBlackGallery.jpg");
 }
 
-.prj-4 .prj-img {
-  background-image: url("/projects/BootstrapProject.jpg");
-}
-
-.prj-5 .prj-img {
+.itme-2 {
   background-image: url("/foto/18.png");
 }

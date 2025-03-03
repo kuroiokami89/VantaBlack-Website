@@ -1,7 +1,13 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { NeutralFace, NeutralFaceBold } from "./fonts";
+import {
+  NeutralFace,
+  NeutralFaceBold,
+  Kusanagi,
+  Orbitron,
+  OrbitronLight,
+} from "./fonts";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -24,7 +30,7 @@ export default function Intro() {
   return (
     <div
       id="intro"
-      className={`block-margins ${NeutralFaceBold.className}`}
+      className={`block-margins ${Kusanagi.className}`}
       ref={introRef}
       style={{ opacity: 0 }}
     >
@@ -32,12 +38,12 @@ export default function Intro() {
         <div className="homepage-title">
           <h1 className="title">VANTABLACK</h1>
         </div>
-        <p className={`${NeutralFace.className}`}>
+        <p className={`${OrbitronLight.className}`}>
           Italy-based junior front-end developer skilled in responsive design
           and UX/UI. Passionate about crafting user-friendly, visually impactful
           web experiences.
         </p>
-        <a href="#about" className={`${NeutralFace.className}`}>
+        <a href="#about" className={`${OrbitronLight.className}`}>
           SEE MORE ABOUT ME
         </a>
       </div>

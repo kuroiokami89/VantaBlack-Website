@@ -1,11 +1,11 @@
 "use client";
 
-import { NeutralFace, NeutralFaceBold } from "./fonts";
+import { NeutralFace, NeutralFaceBold, OrbitronLight } from "./fonts";
 
 export default function Footer() {
   return (
-    <footer id="footer" className={`block-margins ${NeutralFace.className}`}>
-      <span className="email-heading">WANT TO REACH ME ?</span>
+    <footer id="footer" className={`${OrbitronLight.className}`}>
+      {/* <span className="email-heading">WANT TO REACH ME ?</span>
       <div className="section-title">
         <a
           href="mailto:sergioallushaj@gmail.com"
@@ -14,7 +14,7 @@ export default function Footer() {
         >
           EMAIL ME
         </a>
-      </div>
+      </div> */}
       <div className="social-links">
         <div className="socials">
           <a
