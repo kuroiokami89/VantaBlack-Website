@@ -163,7 +163,6 @@ a {
 
 /** INIZIO STILE FOOTER **/
 #footer {
-  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

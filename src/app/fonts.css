@@ -37,7 +37,7 @@ a,
 
 /* Specific Element Styles */
 #services h3,
-.project-item h3 {
+.project-itme h3 {
   font-size: 2.2rem !important;
 }
 
@@ -45,8 +45,8 @@ a,
   font-size: 4rem !important;
 }
 
-#footer .section-title a {
-  font-size: 22.65rem;
+#footer {
+  font-size: 1.05rem;
 }
 
 /* Responsive Breakpoints */
