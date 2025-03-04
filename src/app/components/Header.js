@@ -19,7 +19,7 @@ export default function Header() {
             />
           </a>
           <div id="menu">
-            <a href="#footer">CONTACT</a>
+            <a href="#footer">EMAIL</a>
           </div>
         </div>
         <div id="mobile-menu">
