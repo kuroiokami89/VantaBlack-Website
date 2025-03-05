@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { PhotoList } from "./PhotoList";
-import { NeutralFace } from "../components/fonts";
+import { NeutralFace, Kusanagi } from "../components/fonts";
 
 export default function Gallery() {
   useEffect(() => {
@@ -43,6 +43,9 @@ export default function Gallery() {
 
   return (
     <div id="gallery" className={`${NeutralFace.className}`}>
+      <div className="section-title">
+        <h2 className={`${Kusanagi.className}`}>PORTFOLIO</h2>
+      </div>
       <div className="grid-sizer"></div>
       {PhotoList.map((image, index) => (
         <div

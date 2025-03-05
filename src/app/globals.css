@@ -422,7 +422,8 @@ a {
 /* INIZIO STILE GALLERIA */
 #gallery {
   margin-top: 70px;
-  margin-bottom: 200px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid white;
   position: relative;
 }
 

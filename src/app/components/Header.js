@@ -19,7 +19,7 @@ export default function Header() {
             />
           </a>
           <div id="menu">
-            <a href="#footer">EMAIL</a>
+            <a href="mailto:sergioallushaj@gmail.com">EMAIL</a>
           </div>
         </div>
         <div id="mobile-menu">
@@ -29,7 +29,7 @@ export default function Header() {
           <a href="/">
             <img src="/Logo VB WH.svg" alt="Logo" id="mobile-logo" />
           </a>
-          <a href="#footer">CONTACT</a>
+          <a href="mailto:sergioallushaj@gmail.com">EMAIL</a>
         </div>
       </div>
     </header>
