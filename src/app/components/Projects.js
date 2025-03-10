@@ -1,4 +1,4 @@
-import { NeutralFace, Kusanagi, OrbitronLight } from "./fonts";
+import { Kusanagi, OrbitronLight } from "./fonts";
 
 export default function Projects() {
   return (
@@ -9,17 +9,17 @@ export default function Projects() {
       <div className="container">
         <a
           href="https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/"
-          className="project-itme itme-1"
+          className="project-item item-1"
         >
           <div className="spans">
             <span>2022</span>
-            <span>WEBSITE</span>
+            <span>PERSONAL WEBSITE</span>
           </div>
-          <h3>VANTABLACK PORTFOLIO 1.0</h3>
+          <h3>VANTABLACK WEBSITE 1.0</h3>
         </a>
         <a
           href="https://www.figma.com/design/geHeoJJUyNJfAzgMKroU15/Kronos--2.0---Ecommerce?node-id=0-1&t=aUKnXH3w3MON96t7-1"
-          className="project-itme itme-2"
+          className="project-item item-2"
         >
           <div className="spans">
             <span>2024</span>
@@ -29,7 +29,7 @@ export default function Projects() {
         </a>
         <a
           href="https://vanta-black-kronos.vercel.app/"
-          className="project-itme itme-3"
+          className="project-item item-3"
         >
           <div className="spans">
             <span>2024</span>
@@ -37,7 +37,7 @@ export default function Projects() {
           </div>
           <h3>KRONOS ONLINE SHOP</h3>
         </a>
-        <a href="/graphic-projects" className="project-itme itme-4">
+        <a href="/graphic-projects" className="project-item item-4">
           <div className="spans">
             <span>2025</span>
             <span>PORTFOLIO</span>

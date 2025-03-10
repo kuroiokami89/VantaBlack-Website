@@ -27,7 +27,7 @@
     width: 35%;
   }
 
-  .project-itme {
+  .project- {
     height: 500px;
   }
 }
@@ -212,7 +212,6 @@
 
   #services {
     flex-direction: column;
-    margin-bottom: 30px;
   }
 
   .skill,
@@ -293,25 +292,31 @@
     gap: 15px;
   }
 
-  #projects .section-title,
-  #services {
+  #projects .section-title {
     margin-bottom: 20px;
+  }
+
+  #projects .section-title {
+    margin-top: 15px;
   }
 
   #projects .section-title {
     padding: 0 15px;
   }
 
-  .project-itme:nth-child(even) {
+  .project-item:nth-child(even) {
     border-left: 0;
     border-bottom: 0;
   }
 
-  .project-itme::before {
+  .project-item::before {
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  #intro p {
+    margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* Add styles for 480px breakpoint if needed */
 }

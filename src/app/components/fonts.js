@@ -28,6 +28,22 @@ const OrbitronLight = localFont({
   src: "../fonts/Orbitron Light.otf",
 });
 
+const Kleemax = localFont({
+  src: "../fonts/kleemaxdemo.otf",
+});
+
+const Kasa = localFont({
+  src: "../fonts/MBF Kasa.otf",
+});
+
+const Reno = localFont({
+  src: "../fonts/RenoMono.otf",
+});
+
+const Ki = localFont({
+  src: "../fonts/Ki-Regular.otf",
+});
+
 export {
   NeutralFace,
   NeutralFaceBold,
@@ -36,4 +52,8 @@ export {
   Kusanagi,
   Orbitron,
   OrbitronLight,
+  Kleemax,
+  Kasa,
+  Reno,
+  Ki,
 };

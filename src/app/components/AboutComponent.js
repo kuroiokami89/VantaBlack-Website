@@ -1,10 +1,11 @@
 "use client";
 
-import { NeutralFace, OrbitronLight } from "../components/fonts.js";
+import { Kusanagi, OrbitronLight, Reno, Ki } from "../components/fonts.js";
 
 export default function AboutComponent() {
   return (
-    <div id="about" className={`${OrbitronLight.className}`}>
+    <div id="about" className={`${Ki.className}`}>
+      <h2 className={`${Kusanagi.className}`}>SERGIO ALLUSHAJ</h2>
       <p>
         Hi! I’m Sergio Allushaj (Vantablack), a junior front-end developer and
         graphic designer from Italy. Merging my background in photography/design
@@ -13,13 +14,6 @@ export default function AboutComponent() {
         and Adobe Suite. I strive to create functional, visually engaging
         digital experiences.
       </p>
-      {/* <a
-        className="link-btn link"
-        href="/cv/CV ALLUSHAJ SERGIO - ENG.pdf"
-        download
-      >
-        DOWNLOAD CV (ENG)
-      </a> */}
       <a className="link-btn link" href="/cv/CV ALLUSHAJ SERGIO.pdf" download>
         DOWNLOAD CV (ITA)
       </a>

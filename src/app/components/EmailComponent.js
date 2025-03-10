@@ -1,6 +1,6 @@
 "use client";
 
-import { NeutralFace, NeutralFaceBold, OrbitronLight, Kusanagi } from "./fonts";
+import { OrbitronLight, Kusanagi } from "./fonts";
 
 export default function Email() {
   return (

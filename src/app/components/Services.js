@@ -1,4 +1,4 @@
-import { NeutralFace, Kusanagi, OrbitronLight } from "./fonts";
+import { Kusanagi, OrbitronLight } from "./fonts";
 
 export default function Services() {
   return (

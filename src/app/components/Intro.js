@@ -1,13 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import {
-  NeutralFace,
-  NeutralFaceBold,
-  Kusanagi,
-  Orbitron,
-  OrbitronLight,
-} from "./fonts";
+import { Kusanagi, OrbitronLight, Reno, Ki } from "./fonts";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -38,13 +32,19 @@ export default function Intro() {
         <div className="homepage-title">
           <h1 className="title">VANTABLACK</h1>
         </div>
-        <p className={`${OrbitronLight.className}`}>
-          Italy-based junior front-end developer skilled in responsive design
-          and UX/UI. Passionate about crafting user-friendly, visually impactful
-          web experiences.
+        <p className={`${Ki.className}`}>
+          {" "}
+          2022 - PRESENT <br />
+          <br />
+          &gt; AVAILABLE FOR WORK <br />
+          &gt; Open to Global Collaborations
+          <br />
+          &gt; BASED IN ITALY, TREVISO <br />
+          &gt; WEB GRAPHIC DESINGER <br />
+          &gt; JUNIOR MOTION DESIGNER <br />
         </p>
-        <a href="#about" className={`${OrbitronLight.className}`}>
-          SEE MORE ABOUT ME
+        <a href="#projects" className={`btn ${Ki.className}`}>
+          SEE MY PERSONAL PROJECTS
         </a>
       </div>
     </div>

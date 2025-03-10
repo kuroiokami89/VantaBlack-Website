@@ -15,13 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Body styles */
 body {
   font-size: 14px;
   color: #fff;
   background: black;
   width: 100%;
-  min-height: 100vh; /* Ensure body covers the full viewport height */
+  min-height: 100vh;
 }
 
 ::selection {
@@ -35,13 +34,11 @@ body {
   color: #000;
 }
 
-/* Remove scrollbar space */
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
 
-/* Optional: show position indicator */
 ::-webkit-scrollbar-thumb {
   background: #ff0000;
 }
@@ -129,12 +126,7 @@ a {
   display: none;
 }
 
-#header .link-btn {
-  font-size: 3rem;
-}
-
 .header-container {
-  font-size: 1.05rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,22 +135,16 @@ a {
 }
 
 .desktop-menu {
-  font-size: 1.05rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-#time {
-  font-size: 1.05rem;
-}
-
 .header-anchors {
   display: flex;
   gap: 40px;
 }
-
 /** FINE STILE HEADER **/
 
 /** INIZIO STILE FOOTER **/
@@ -193,10 +179,6 @@ a {
   position: relative;
 }
 
-.social-links span {
-  font-size: 1.25rem !important;
-}
-
 .social-links {
   display: flex;
   justify-content: space-between;
@@ -204,7 +186,7 @@ a {
 }
 
 .copywright {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.35);
   margin-bottom: 20px !important;
 }
 /** FINE STILE FOOTER **/
@@ -228,7 +210,6 @@ a {
 }
 
 #intro a {
-  font-size: 1.15rem;
   position: absolute;
   bottom: 50px;
 }
@@ -236,6 +217,10 @@ a {
 #intro svg {
   width: 17px;
   margin-left: 10px;
+}
+
+#intro p {
+  margin-left: 20px;
 }
 
 #title-img {
@@ -255,7 +240,6 @@ a {
 
 /* INIZIO STILE SERVICES */
 #services {
-  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -390,8 +374,13 @@ a {
 #about a {
   width: 20%;
 }
+
+#about2 {
+  padding: 50px 0;
+}
 /* FINE STILE ABOUT */
 
+/* INIZIO STILE GALLERY PROJECTS */
 .grid-sizer,
 .grid-item {
   width: 20%;
@@ -419,7 +408,6 @@ a {
   background-image: url("/graphics/3.png");
 }
 
-/* INIZIO STILE GALLERIA */
 #gallery {
   margin-top: 70px;
   margin-bottom: 25px;
@@ -504,8 +492,9 @@ a {
   padding: 5px 10px;
   cursor: pointer;
 }
+/* FINE STILE GALLERY PROJECTS */
 
-/* FINE STILE GALLERIA */
+/* INIZIO STILE PROJECTS */
 #projects .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -515,9 +504,10 @@ a {
 #projects .section-title {
   padding: 0 15px;
   margin-bottom: 50px;
+  margin-top: 40px;
 }
 
-.project-itme {
+.project-item {
   border: 1px solid white;
   padding: 15px;
   display: flex;
@@ -539,22 +529,18 @@ a {
   justify-content: space-between;
 }
 
-.spans span {
-  font-size: 1.25rem;
-}
-
-.project-itme:nth-child(odd) {
+.project-item:nth-child(odd) {
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
 }
 
-.project-itme:nth-child(even) {
+.project-item:nth-child(even) {
   border-right: 0;
   border-bottom: 0;
 }
 
-.project-itme::before {
+.project-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -566,38 +552,40 @@ a {
   transition: opacity 0.6s ease-in;
 }
 
-.project-itme:hover::before {
+.project-item:hover::before {
   opacity: 0.65;
 }
 
-.project-itme h3,
-.project-itme span {
+.project-item h3,
+.project-item span {
   position: relative;
   z-index: 1;
 }
 
-.itme-1 {
+.item-1 {
   background-image: url("/projects/VantaBlack-OLD.gif");
 }
 
-.itme-3 {
+.item-3 {
   background-image: url("/projects/Kronos.gif");
 }
 
-.itme-4 {
+.item-4 {
   background-image: url("/projects/VantaBlackGallery.jpg");
 }
 
-.itme-2 {
+.item-2 {
   background-image: url("/foto/18.png");
 }
+/* FINE STILE PROJECTS */
 
+/* INIZIO STILE EMAIL COMPONENT */
 #email {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 15px;
+  padding: 150px 15px;
   border-bottom: 1px solid white;
   margin-bottom: 25px;
 }
@@ -605,3 +593,4 @@ a {
 .email:hover {
   color: white;
 }
+/* FINE STILE EMAIL COMPONENT */

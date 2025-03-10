@@ -1,9 +1,9 @@
-import { NeutralFace, OrbitronLight } from "./fonts";
+import { OrbitronLight, Ki } from "./fonts";
 import LocalTime from "./LocalTime";
 
 export default function Header() {
   return (
-    <header id="header" className={`${OrbitronLight.className}`}>
+    <header id="header" className={`${Ki.className}`}>
       <div className="header-container block-margins">
         <div className="desktop-menu">
           <div id="time time-desktop">
@@ -19,7 +19,7 @@ export default function Header() {
             />
           </a>
           <div id="menu">
-            <a href="mailto:sergioallushaj@gmail.com">EMAIL</a>
+            <a href="mailto:sergioallushaj@gmail.com">CONTACT ME</a>
           </div>
         </div>
         <div id="mobile-menu">
@@ -29,7 +29,7 @@ export default function Header() {
           <a href="/">
             <img src="/Logo VB WH.svg" alt="Logo" id="mobile-logo" />
           </a>
-          <a href="mailto:sergioallushaj@gmail.com">EMAIL</a>
+          <a href="mailto:sergioallushaj@gmail.com">EMAIL ME</a>
         </div>
       </div>
     </header>

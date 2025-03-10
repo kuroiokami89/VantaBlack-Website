@@ -1,3 +1,4 @@
+/* Global Styles */
 h1 {
   font-size: 12.65rem;
   line-height: 0.9;
@@ -10,56 +11,91 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  font-size: 25px !important;
+  font-size: 25px;
 }
 
 p {
   text-transform: uppercase;
   font-weight: 100;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   line-height: 1.6;
 }
 
-#about p {
-  font-size: 1.35rem !important;
+/* Header, Footer, and General Sections */
+.header-container,
+.desktop-menu,
+#time,
+#footer {
+  font-size: 1.15rem;
 }
 
+/* Intro Section */
+#intro a,
 .intro-container p {
   font-size: 1.15rem;
 }
 
+/* Links and Buttons */
 a,
 .link-btn {
   color: white;
   background: transparent;
 }
 
+/* Services & Project Titles */
 #services h3,
-.project-itme h3 {
-  font-size: 2.2rem !important;
+.project-item h3 {
+  font-size: 2.2rem;
 }
 
+/* Skills Section */
 .skill-title h3 {
-  font-size: 4rem !important;
+  font-size: 4rem;
 }
 
-#footer {
-  font-size: 1.05rem;
-}
-
+/* Email Section */
 #email span {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.4);
 }
 
 #email a {
   cursor: pointer;
-  font-size: 13.1rem;
+  font-size: 11rem;
   transition: color 0.5s ease-in;
 }
 
 #email a:hover {
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* About2 Section */
+#about2 {
+  border-top: 1px solid white;
+  padding: 15px;
+}
+
+#about2 p {
+  line-height: 1.1;
+  font-size: 4rem;
+}
+
+#about2 h2 {
+  font-size: 9.33rem;
+  margin-bottom: 30px;
+}
+
+#about2 h2::before {
+  padding-bottom: 15px;
+}
+
+/* Social Links */
+.social-links span {
+  font-size: 1.25rem;
+}
+
+.spans span {
+  font-size: 1.15rem;
 }
 
 @media screen and (max-width: 1450px) {
@@ -113,17 +149,17 @@ a,
 
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 2.5rem !important;
+    font-size: 2.43rem !important;
     line-height: 50px;
   }
 
   h2 {
-    font-size: 2.7rem !important;
+    font-size: 3rem !important;
     line-height: 1.1;
   }
 
   h3 {
-    font-size: 2.2rem !important;
+    font-size: 1.85rem !important;
     margin-bottom: 0 !important;
   }
 
@@ -174,5 +210,18 @@ a,
   #email a {
     line-height: 0.9;
     font-size: 3.4rem;
+  }
+
+  .spans span {
+    font-size: 1.05rem;
+  }
+
+  #about2 p {
+    line-height: 1.1;
+    font-size: 2.2rem;
+  }
+
+  #about2 br {
+    display: none;
   }
 }
