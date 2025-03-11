@@ -316,6 +316,15 @@
   #intro p {
     margin-left: 10px;
   }
+
+  #gallery-container p {
+    width: 100%;
+  }
+
+  #gallery-container h2 {
+    margin-top: 15px;
+    padding: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {

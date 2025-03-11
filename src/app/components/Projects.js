@@ -10,11 +10,11 @@ const projects = [
     className: "item-1",
   },
   {
-    year: "2024",
-    type: "FIGMA PROTOTYPE",
-    title: "KRONOS FIGMA PROTHOTYPE",
-    href: "https://www.figma.com/design/geHeoJJUyNJfAzgMKroU15/Kronos--2.0---Ecommerce?node-id=0-1&t=aUKnXH3w3MON96t7-1",
-    className: "item-2",
+    year: "2025",
+    type: "PORTFOLIO",
+    title: "GRAPHIC WORKS",
+    href: "/graphic-projects",
+    className: "item-4",
   },
   {
     year: "2024",
@@ -24,11 +24,11 @@ const projects = [
     className: "item-3",
   },
   {
-    year: "2025",
-    type: "PORTFOLIO",
-    title: "GRAPHIC WORKS",
-    href: "/graphic-projects",
-    className: "item-4",
+    year: "2024",
+    type: "FIGMA PROTOTYPE",
+    title: "KRONOS FIGMA PROTHOTYPE",
+    href: "https://www.figma.com/design/geHeoJJUyNJfAzgMKroU15/Kronos--2.0---Ecommerce?node-id=0-1&t=aUKnXH3w3MON96t7-1",
+    className: "item-2",
   },
 ];
 

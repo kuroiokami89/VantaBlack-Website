@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { PhotoList } from "./PhotoList";
-import { NeutralFace, Kusanagi } from "../components/fonts";
+import { NeutralFace, Kusanagi, Ki } from "../components/fonts";
 
 export default function Gallery() {
   useEffect(() => {
@@ -42,25 +42,32 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div id="gallery" className={`${NeutralFace.className}`}>
-      <div className="section-title">
-        <h2 className={`${Kusanagi.className}`}>PORTFOLIO</h2>
+    <div id="gallery-container">
+      <h2 className={`${Kusanagi.className}`}>Graphic Projects</h2>
+      <div className="gallery-paragraph">
+        <p className={`${Ki.className}`}>
+          Here you'll find a selection of my graphic design projects, including
+          branding, digital artwork, and motion design. Each project reflects my
+          approach to visuals, combining creativity with technical precision.
+        </p>
       </div>
-      <div className="grid-sizer"></div>
-      {PhotoList.map((image, index) => (
-        <div
-          className="grid-item"
-          key={index}
-          onClick={() => handleImageClick(image)}
-        >
-          <img src={image.url} alt={`Image ${index + 1}`} />
+      <div id="gallery" className={`${NeutralFace.className}`}>
+        <div className="grid-sizer"></div>
+        {PhotoList.map((image, index) => (
+          <div
+            className="grid-item"
+            key={index}
+            onClick={() => handleImageClick(image)}
+          >
+            <img src={image.url} alt={`Image ${index + 1}`} />
+          </div>
+        ))}
+        <div className="grid-item">
+          <video autoPlay>
+            <source src="/projects/Halloween Skeleton.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-      ))}
-      <div className="grid-item">
-        <video autoPlay>
-          <source src="/projects/Halloween Skeleton.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </div>
     </div>
   );
