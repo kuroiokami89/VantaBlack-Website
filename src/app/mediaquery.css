@@ -27,8 +27,12 @@
     width: 35%;
   }
 
-  .project- {
-    height: 500px;
+  #gallery-container h2 {
+    margin-top: 30px;
+  }
+
+  .project-item {
+    height: 450px;
   }
 }
 
@@ -292,10 +296,6 @@
     gap: 15px;
   }
 
-  .project-item {
-    height: 450px !important;
-  }
-
   #projects .section-title {
     margin-bottom: 20px;
   }
@@ -328,6 +328,10 @@
   #gallery-container h2 {
     margin-top: 15px;
     padding: 15px;
+  }
+
+  .project-item {
+    height: 400px;
   }
 }
 
