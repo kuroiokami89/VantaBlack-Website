@@ -129,6 +129,14 @@ a,
     font-size: 33px !important;
     margin-bottom: 0 !important;
   }
+
+  #email a {
+    font-size: 8rem;
+  }
+
+  #email {
+    padding: 100px 15px;
+  }
 }
 
 @media screen and (max-width: 1024px) {

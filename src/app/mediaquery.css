@@ -292,6 +292,10 @@
     gap: 15px;
   }
 
+  .project-item {
+    height: 450px;
+  }
+
   #projects .section-title {
     margin-bottom: 20px;
   }
