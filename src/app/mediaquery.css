@@ -293,7 +293,7 @@
   }
 
   .project-item {
-    height: 450px;
+    height: 450px !important;
   }
 
   #projects .section-title {
