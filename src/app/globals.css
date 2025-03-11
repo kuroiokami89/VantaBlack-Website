@@ -382,7 +382,7 @@ a {
 
 /* INIZIO STILE GALLERY PROJECTS */
 #gallery-container {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -436,7 +436,6 @@ a {
 }
 
 #gallery {
-  margin-top: 70px;
   margin-bottom: 25px;
   border-bottom: 1px solid white;
   position: relative;
