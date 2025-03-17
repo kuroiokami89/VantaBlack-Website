@@ -1,4 +1,4 @@
-import { OrbitronLight, Ki } from "./fonts";
+import { Ki } from "./fonts";
 import LocalTime from "./LocalTime";
 
 export default function Header() {

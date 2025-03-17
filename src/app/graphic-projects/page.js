@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { PhotoList } from "./PhotoList";
-import { NeutralFace, Kusanagi, Ki } from "../components/fonts";
+import { Kusanagi } from "../components/fonts";
 
 export default function Gallery() {
   useEffect(() => {
@@ -43,15 +43,15 @@ export default function Gallery() {
 
   return (
     <div id="gallery-container">
-      <h2 className={`${Kusanagi.className}`}>Graphic Projects</h2>
+      <h1 className={`${Kusanagi.className}`}>Graphic Projects</h1>
       <div className="gallery-paragraph">
-        <p className={`${Ki.className}`}>
+        {/* <p className={`${Ki.className}`}>
           Here you'll find a selection of my graphic design projects, including
           branding, digital artwork, and motion design. Each project reflects my
           approach to visuals, combining creativity with technical precision.
-        </p>
+        </p> */}
       </div>
-      <div id="gallery" className={`${NeutralFace.className}`}>
+      <div id="gallery">
         <div className="grid-sizer"></div>
         {PhotoList.map((image, index) => (
           <div

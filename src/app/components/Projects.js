@@ -35,7 +35,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className={OrbitronLight.className}>
-      <div className="section-title">
+      <div className="section-title" id="projects-title">
         <h2 className={Kusanagi.className}>PROJECTS</h2>
       </div>
       <div className="container">

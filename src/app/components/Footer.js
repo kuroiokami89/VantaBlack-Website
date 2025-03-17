@@ -1,6 +1,6 @@
 "use client";
 
-import { OrbitronLight, Ki } from "./fonts";
+import { Ki } from "./fonts";
 
 export default function Footer() {
   return (
@@ -15,6 +15,9 @@ export default function Footer() {
           </a>
           <a className="link-btn link" href="https://github.com/kuroiokami89">
             &gt; GITHUB
+          </a>
+          <a className="link-btn link" href="#top">
+            &gt; RETURN TO TOP
           </a>
         </div>
         <span className="copywright">WEBSITE MADE BY ©VANTABLACK</span>

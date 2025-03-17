@@ -1,13 +1,11 @@
 "use client";
 
-import { OrbitronLight, Kusanagi } from "./fonts";
+import { Kusanagi, Ki } from "./fonts";
 
 export default function Email() {
   return (
     <div id="email">
-      <span className={`${OrbitronLight.className}`}>
-        WHANT TO GET IN CONTACT?
-      </span>
+      <span className={`${Ki.className}`}>INTRESTED IN MY SERVICES ?</span>
       <a
         href="mailto:sergioallushaj@gmail.com"
         className={`${Kusanagi.className}`}

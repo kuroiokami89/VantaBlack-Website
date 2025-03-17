@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { Kusanagi, OrbitronLight, Reno, Ki } from "./fonts";
+import { Kusanagi, Ki } from "./fonts";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -12,13 +12,15 @@ export default function Intro() {
 
   useEffect(() => {
     const el = introRef.current;
+    if (!el) return;
 
-    // Use fromTo to animate from opacity 0 to 1
     gsap.fromTo(
       el,
-      { opacity: 0 }, // Initial state (hidden)
-      { opacity: 1, duration: 1.5, ease: "power2.out", delay: 0.5 } // Fade in with slight delay
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5, ease: "power2.out", delay: 0.5 }
     );
+
+    return () => gsap.killTweensOf(el); // Cleanup GSAP animation on unmount
   }, []);
 
   return (
@@ -31,21 +33,59 @@ export default function Intro() {
       <div className="intro-container">
         <div className="homepage-title">
           <h1 className="title">VANTABLACK</h1>
+          <h1 className="title title-mobile">
+            VANTA
+            <br />
+            BLACK
+          </h1>
         </div>
-        <p className={`${Ki.className}`}>
-          {" "}
-          2022 - PRESENT <br />
-          <br />
-          &gt; AVAILABLE FOR WORK <br />
-          &gt; Open to Global Collaborations
-          <br />
-          &gt; BASED IN ITALY, TREVISO <br />
-          &gt; WEB GRAPHIC DESINGER <br />
-          &gt; JUNIOR MOTION DESIGNER <br />
-        </p>
-        <a href="#projects" className={`btn ${Ki.className}`}>
-          SEE MY PERSONAL PROJECTS
-        </a>
+
+        <div className={`container-links ${Ki.className}`}>
+          <ul>
+            <li>2022 - PRESENT</li>
+            <li>AVAILABLE FOR WORK</li>
+            <li>OPEN TO GLOBAL COLLABORATIONS</li>
+            <li>BASED IN ITALY, TREVISO</li>
+            <li>WEB GRAPHIC DESIGNER</li>
+            <li>JUNIOR MOTION DESIGNER</li>
+          </ul>
+          <ul className="links">
+            <li>
+              <a
+                className="link-btn"
+                href="https://github.com/kuroiokami89"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GITHUB
+              </a>
+            </li>
+            <li>
+              <a
+                className="link-btn"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a
+                className="link-btn"
+                href="/cv/CV ALLUSHAJ SERGIO.pdf"
+                download
+              >
+                DOWNLOAD CV [IT]
+              </a>
+            </li>
+            <li>
+              <a className="link-btn" href="#projects-title">
+                SELECTED PROJECTS
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

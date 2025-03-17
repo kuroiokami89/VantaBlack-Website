@@ -186,7 +186,7 @@ a {
 }
 
 .copywright {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 20px !important;
 }
 /** FINE STILE FOOTER **/
@@ -195,37 +195,19 @@ a {
 #intro {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   margin-bottom: 0 !important;
 }
 
 .intro-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-}
-
-.intro-container p {
-  width: 26.9%;
-}
-
-#intro a {
-  position: absolute;
-  bottom: 50px;
+  gap: 100px;
 }
 
 #intro svg {
   width: 17px;
   margin-left: 10px;
-}
-
-#intro p {
-  margin-left: 20px;
-}
-
-#title-img {
-  width: 100%;
-  padding-top: 50px;
 }
 
 .homepage-title {
@@ -234,7 +216,23 @@ a {
 }
 
 .title {
-  padding-top: 80px;
+  padding-top: 35px;
+}
+
+.title-mobile {
+  display: none;
+}
+
+.container-links {
+  display: flex;
+  gap: 150px;
+  margin-left: 25px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 /** FINE STILE INTRO **/
 
@@ -282,7 +280,7 @@ a {
   z-index: 1;
 }
 .skill:nth-child(2) {
-  width: 65%;
+  width: 55%;
   border-right: 0;
 }
 
@@ -296,7 +294,7 @@ a {
 }
 
 .skill-title {
-  width: 35%;
+  width: 45%;
   border-left: 0;
   border-bottom: 0;
   align-items: flex-start;
@@ -329,66 +327,11 @@ a {
 }
 /* FINE STILE SERVICES */
 
-/* INIZIO STILE ABOUT */
-#about {
-  height: 100vh;
-  background-image: url("/ProfilePic.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid white;
-}
-
-#about::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 0;
-}
-
-#about p {
-  position: relative;
-  z-index: 1;
-  margin-left: 200px;
-  width: 30%;
-  color: white;
-  text-align: justify;
-}
-
-.icon-Logo-VB-WH:before {
-  content: "\e900";
-  color: #fff;
-  font-size: 220px;
-}
-
-#about a {
-  width: 20%;
-}
-
-#about2 {
-  padding: 50px 0;
-}
-/* FINE STILE ABOUT */
-
 /* INIZIO STILE GALLERY PROJECTS */
 #gallery-container {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-}
-
-.gallery-paragraph {
-  border-top: 1px solid white;
 }
 
 .gallery-paragraph {
@@ -403,9 +346,6 @@ a {
 #gallery-container h2 {
   margin-top: 70px;
   padding: 40px 15px 50px;
-  border: 1px solid white;
-  border-left: none;
-  border-right: none;
 }
 
 .grid-sizer,
@@ -524,13 +464,13 @@ a {
 #projects .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-bottom: 1px solid white;
 }
 
 #projects .section-title {
   padding: 0 15px;
   margin-bottom: 50px;
-  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid white;
 }
 
 .project-item {
@@ -611,7 +551,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 150px 15px;
+  padding: 100px 15px;
   border-bottom: 1px solid white;
   margin-bottom: 25px;
 }
