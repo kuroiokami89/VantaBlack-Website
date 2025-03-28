@@ -10,7 +10,7 @@ export default function Services() {
         <h3>Front-end development</h3>
       </div>
       <div className="skill skill-2">
-        <h3>UI/UX</h3>
+        <h3>UI/UX DESIGN</h3>
       </div>
       <div className="skill skill-3">
         <h3>Photo and video editing</h3>

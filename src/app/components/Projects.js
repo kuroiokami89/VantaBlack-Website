@@ -11,14 +11,14 @@ const projects = [
   },
   {
     year: "2025",
-    type: "PORTFOLIO",
-    title: "GRAPHIC WORKS",
+    type: "PORTFOLIO HIGHLIGHTS",
+    title: "VISUAL GALLERY",
     href: "/graphic-projects",
     className: "item-4",
   },
   {
     year: "2024",
-    type: "E-SHOP",
+    type: "E-COMMERCE",
     title: "KRONOS ONLINE SHOP",
     href: "https://vanta-black-kronos.vercel.app/",
     className: "item-3",
