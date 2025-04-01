@@ -283,4 +283,7 @@
 }
 
 @media screen and (max-width: 480px) {
+  #intro {
+    height: 92vh;
+  }
 }

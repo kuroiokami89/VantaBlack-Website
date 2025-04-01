@@ -1,4 +1,3 @@
-/* Global Styles */
 h1 {
   font-size: 12.65rem;
   line-height: 0.9;
@@ -36,7 +35,9 @@ ul {
   list-style: square;
 }
 
-#intro a {
+#intro a,
+.social-links span,
+.link-btn {
   font-size: 1.05rem;
 }
 
@@ -87,51 +88,39 @@ a,
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* Social Links */
-.social-links span {
-  font-size: 1.25rem;
-}
-
 .spans span {
   font-size: 1.15rem;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 1450px) {
   h1 {
     font-size: 5rem;
     line-height: 1.05;
   }
-
   .title {
-    font-size: 8.8rem !important;
+    font-size: 9.2rem !important;
   }
-
   .intro-container p {
     font-size: 1.1rem;
   }
-
   #footer .section-title a {
     font-size: 16rem;
   }
-
   h2 {
     font-size: 5rem;
     line-height: 1.05;
   }
-
   #projects h2 {
     font-size: 5.5rem;
   }
-
   .prj-text h3 {
     font-size: 33px !important;
     margin-bottom: 0 !important;
   }
-
   #email a {
     font-size: 8rem;
   }
-
   #email {
     padding: 100px 15px;
   }
@@ -147,7 +136,6 @@ a,
   .title {
     font-size: 6.3rem !important;
   }
-
   #footer .section-title a {
     font-size: 9.1rem;
   }
@@ -157,87 +145,60 @@ a,
   .title {
     font-size: 2.43rem !important;
     line-height: 50px;
-  }
-
-  #gallery-container h1 {
-    margin-top: 10px;
-    font-size: 3.4rem !important;
-    line-height: 50px;
-  }
-
-  h2 {
-    font-size: 3rem !important;
-    line-height: 0.95;
-  }
-
-  h3 {
-    font-size: 1.85rem !important;
-    margin-bottom: 0 !important;
-  }
-
-  p {
-    font-size: 1.3rem;
-  }
-
-  .social-links span {
-    font-size: 1rem !important;
-  }
-
-  #footer .section-title a {
-    font-size: 1.05rem !important;
-    text-align: left;
-  }
-
-  .title {
     display: none;
     padding-top: 50px;
   }
-
   .title-mobile {
     display: block;
     font-size: 4.9rem !important;
     line-height: 0.9;
   }
-
-  .intro-container p {
-    font-size: 1rem;
+  #gallery-container h1 {
+    margin-top: 10px;
+    font-size: 3.4rem !important;
+    line-height: 50px;
   }
-
+  h2 {
+    font-size: 3rem !important;
+    line-height: 0.95;
+  }
+  h3 {
+    font-size: 1.85rem !important;
+    margin-bottom: 0 !important;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .social-links span {
+    font-size: 1rem !important;
+  }
+  #footer .section-title a {
+    font-size: 1.05rem !important;
+    text-align: left;
+  }
   .close-button {
     font-size: 3rem !important;
   }
-
   #projects2 h2 {
     font-size: 3rem !important;
   }
-
   .prj-text h3 {
     font-size: 2.3rem !important;
     margin-bottom: 0 !important;
   }
-
   #email {
     gap: 25px;
     padding: 50px 0;
     text-align: center;
   }
-
   #email span {
     font-size: 1.2rem;
   }
-
   #email a {
     line-height: 0.9;
     font-size: 3.4rem;
   }
-
   .spans span {
     font-size: 1.05rem;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .title-mobile {
-    font-size: 5.3rem !important;
   }
 }
