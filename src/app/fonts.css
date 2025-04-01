@@ -4,7 +4,7 @@ h1 {
 }
 
 #gallery-container h1 {
-  font-size: 16.2rem;
+  font-size: 17rem;
   line-height: 0.8;
   text-align: center;
 }
@@ -98,29 +98,44 @@ a,
     font-size: 5rem;
     line-height: 1.05;
   }
-  .title {
-    font-size: 9.2rem !important;
+
+  #gallery-container h1 {
+    font-size: 13rem;
+    line-height: 0.8;
+    text-align: center;
   }
+
+  .title {
+    font-size: 8.9rem !important;
+    padding-top: 40px;
+  }
+
   .intro-container p {
     font-size: 1.1rem;
   }
+
   #footer .section-title a {
     font-size: 16rem;
   }
+
   h2 {
     font-size: 5rem;
     line-height: 1.05;
   }
+
   #projects h2 {
     font-size: 5.5rem;
   }
+
   .prj-text h3 {
     font-size: 33px !important;
     margin-bottom: 0 !important;
   }
+
   #email a {
     font-size: 8rem;
   }
+
   #email {
     padding: 100px 15px;
   }
@@ -136,6 +151,7 @@ a,
   .title {
     font-size: 6.3rem !important;
   }
+
   #footer .section-title a {
     font-size: 9.1rem;
   }
@@ -148,56 +164,70 @@ a,
     display: none;
     padding-top: 50px;
   }
+
   .title-mobile {
     display: block;
     font-size: 4.9rem !important;
     line-height: 0.9;
   }
+
   #gallery-container h1 {
     margin-top: 10px;
     font-size: 3.4rem !important;
     line-height: 50px;
   }
+
   h2 {
     font-size: 3rem !important;
     line-height: 0.95;
   }
+
   h3 {
     font-size: 1.85rem !important;
     margin-bottom: 0 !important;
   }
+
   p {
     font-size: 1.3rem;
   }
+
   .social-links span {
     font-size: 1rem !important;
   }
+
   #footer .section-title a {
     font-size: 1.05rem !important;
     text-align: left;
   }
+
   .close-button {
     font-size: 3rem !important;
   }
+
   #projects2 h2 {
     font-size: 3rem !important;
   }
+
   .prj-text h3 {
     font-size: 2.3rem !important;
     margin-bottom: 0 !important;
   }
+
   #email {
     gap: 25px;
     padding: 50px 0;
     text-align: center;
   }
+
   #email span {
     font-size: 1.2rem;
   }
+
   #email a {
     line-height: 0.9;
     font-size: 3.4rem;
   }
+
   .spans span {
     font-size: 1.05rem;
   }
