@@ -43,11 +43,10 @@ export default function Intro() {
         <div className={`container-links ${Ki.className}`}>
           <ul>
             <li>2022 - PRESENT</li>
+            <li>WEB DEVELOPER</li>
+            <li>WEB GRAPHIC DESIGNER</li>
             <li>AVAILABLE FOR WORK</li>
             <li>BASED IN ITALY, TREVISO</li>
-            <li>WEB GRAPHIC DESIGNER</li>
-            <li>JUNIOR MOTION DESIGNER</li>
-            <li>OPEN TO GLOBAL COLLABORATIONS</li>
           </ul>
           <ul className="links">
             <li>

@@ -347,15 +347,6 @@ a {
   padding: 40px 15px 50px;
 }
 
-.grid-sizer,
-.grid-item {
-  width: 20%;
-}
-/* 2 columns */
-.grid-item--width2 {
-  width: 40%;
-}
-
 .grid-item {
   background-size: cover;
   background-position: center;
@@ -380,20 +371,19 @@ a {
   position: relative;
 }
 
-.grid-sizer,
+/* Each column ~33.33% */
+.grid-sizer {
+  width: 33.33%;
+}
+
 .grid-item {
-  width: 50vw;
+  width: 33.33%;
   float: left;
   position: relative;
   overflow: hidden;
 }
 
-.grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
+.grid-item img,
 .grid-item video {
   width: 100%;
   height: auto;

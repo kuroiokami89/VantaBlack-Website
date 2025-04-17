@@ -1,5 +1,17 @@
 export const PhotoList = [
   {
+    url: "/foto/20.png",
+    description: "A portrait of a woman.",
+    device: "Nikon",
+    location: "Paris, France",
+  },
+  {
+    url: "/foto/19.png",
+    description: "A portrait of a woman.",
+    device: "Nikon",
+    location: "Paris, France",
+  },
+  {
     url: "/foto/12.jpg",
     description: "A portrait of a woman.",
     device: "Nikon",
@@ -52,12 +64,6 @@ export const PhotoList = [
     description: "A close-up of a flower.",
     device: "Samsung Galaxy",
     location: "Botanical Garden",
-  },
-  {
-    url: "/projects/VSC Mockup.png",
-    description: "A panoramic shot of the desert.",
-    device: "GoPro",
-    location: "Sahara Desert",
   },
   {
     url: "/foto/4.jpg",
