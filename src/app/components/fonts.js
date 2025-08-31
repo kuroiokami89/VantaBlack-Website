@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-/* FONT USED FOR TITLES (h1 TAG) */
+/* FONT USED FOR TITLES (h1 TAGS) */
 const Kusanagi = localFont({
   src: "../fonts/Kusanagi.otf",
 });

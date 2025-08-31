@@ -41,13 +41,18 @@ export default function Intro() {
         </div>
 
         <div className={`container-links ${Ki.className}`}>
-          <ul>
+          {/* <ul>
             <li>2021 - PRESENT</li>
             <li>WEB DEVELOPER</li>
             <li>WEB GRAPHIC DESIGNER</li>
             <li>AVAILABLE FOR WORK</li>
             <li>BASED IN ITALY, TREVISO</li>
-          </ul>
+          </ul> */}
+          <p>
+            Multidisciplinary creator with 2+ years' experience developing
+            digital experiences that merge technology, design, and strategic
+            communication.
+          </p>
           <ul className="links">
             <li>
               <a
@@ -70,12 +75,17 @@ export default function Intro() {
               </a>
             </li>
             <li>
+              <a className="link-btn" href="/cv/AllushajSergio.pdf" download>
+                DOWNLOAD CV [ENG]
+              </a>
+            </li>
+            <li>
               <a
                 className="link-btn"
                 href="/cv/CV ALLUSHAJ SERGIO.pdf"
                 download
               >
-                DOWNLOAD CV [IT]
+                DOWNLOAD CV [ITA]
               </a>
             </li>
             <li>

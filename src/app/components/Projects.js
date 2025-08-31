@@ -1,6 +1,6 @@
 import { Kusanagi, OrbitronLight, Ki } from "./fonts";
 
-// Projects list
+// My Projects list
 const projects = [
   {
     year: "2022",
@@ -36,7 +36,7 @@ export default function Projects() {
   return (
     <section id="projects" className={OrbitronLight.className}>
       <div className="section-title" id="projects-title">
-        <h2 className={Kusanagi.className}>PROJECTS</h2>
+        <h2 className={OrbitronLight.className}>PROJECTS</h2>
       </div>
       <div className="container">
         {projects.map((project, index) => (

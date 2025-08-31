@@ -92,6 +92,10 @@ a,
   font-size: 1.15rem;
 }
 
+#about p {
+  font-size: 3.85rem;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 1450px) {
   h1 {
@@ -133,17 +137,26 @@ a,
   }
 
   #email a {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   #email {
     padding: 100px 15px;
   }
+
+  #about p {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .title {
-    font-size: 3.5rem !important;
+    font-size: 6.5rem !important;
+    padding-top: 60px;
+  }
+
+  #email a {
+    font-size: 5.25rem;
   }
 }
 
@@ -224,8 +237,8 @@ a,
   }
 
   #email a {
-    line-height: 0.9;
-    font-size: 3.4rem;
+    line-height: 1;
+    font-size: 3.2rem;
   }
 
   .spans span {
