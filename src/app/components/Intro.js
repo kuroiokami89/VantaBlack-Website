@@ -61,7 +61,7 @@ export default function Intro() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GITHUB
+                <span style={{ fontSize: "1.6rem" }}>&#8600;</span> GITHUB
               </a>
             </li>
             <li>
@@ -71,12 +71,13 @@ export default function Intro() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LINKEDIN
+                <span style={{ fontSize: "1.6rem" }}>&#8600;</span> LINKEDIN
               </a>
             </li>
             <li>
               <a className="link-btn" href="/cv/AllushajSergio.pdf" download>
-                DOWNLOAD CV [ENG]
+                <span style={{ fontSize: "1.6rem" }}>&#8600;</span> DOWNLOAD CV
+                [ENG]
               </a>
             </li>
             <li>
@@ -85,12 +86,14 @@ export default function Intro() {
                 href="/cv/CV ALLUSHAJ SERGIO.pdf"
                 download
               >
-                DOWNLOAD CV [ITA]
+                <span style={{ fontSize: "1.6rem" }}>&#8600;</span> DOWNLOAD CV
+                [ITA]
               </a>
             </li>
             <li>
               <a className="link-btn" href="#projects-title">
-                SELECTED PROJECTS
+                <span style={{ fontSize: "1.5rem" }}>&#8600;</span> SELECTED
+                PROJECTS
               </a>
             </li>
           </ul>

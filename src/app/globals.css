@@ -104,6 +104,10 @@ a {
 .link-btn:hover {
   color: rgba(255, 255, 255, 0.45);
 }
+
+li {
+  list-style: none;
+}
 /** END GLOBAL STYLES **/
 
 /** HEADER STYLING **/

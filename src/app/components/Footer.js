@@ -11,13 +11,13 @@ export default function Footer() {
             className="link-btn"
             href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
           >
-            &gt; LINKEDIN
+            <span style={{ fontSize: "1.6rem" }}>&#8600;</span> LINKEDIN
           </a>
           <a className="link-btn link" href="https://github.com/kuroiokami89">
-            &gt; GITHUB
+            <span style={{ fontSize: "1.6rem" }}>&#8600;</span> GITHUB
           </a>
           <a className="link-btn link" href="#top">
-            &gt; RETURN TO TOP
+            <span style={{ fontSize: "1.6rem" }}>&#8600;</span> RETURN TO TOP
           </a>
         </div>
         <span className="copywright">WEBSITE MADE BY ©VANTABLACK</span>
