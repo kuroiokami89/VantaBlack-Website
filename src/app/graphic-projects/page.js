@@ -44,6 +44,7 @@ export default function Gallery() {
   return (
     <div id="gallery-container">
       <h1 className={`${Kusanagi.className}`}>VISUAL GALLERY</h1>
+      {/* <h1 className={`gallery-title ${Kusanagi.className}`}>VANTABLACK</h1> */}
       <div className="gallery-paragraph">
         {/* <p className={`${Ki.className}`}>
           Here you'll find a selection of my graphic design projects, including

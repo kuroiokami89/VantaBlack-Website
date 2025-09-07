@@ -1,11 +1,10 @@
-import { Kusanagi, OrbitronLight, Ki } from "./fonts";
+import { OrbitronLight, Ki } from "./fonts";
 
-// My Projects list
 const projects = [
   {
     year: "2022",
     type: "PERSONAL WEBSITE",
-    title: "VANTABLACK WEBSITE 1.0",
+    title: "VANTABLACK WEBSITE | v1.0",
     href: "https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/",
     className: "item-1",
   },
@@ -19,7 +18,7 @@ const projects = [
   {
     year: "2024",
     type: "E-COMMERCE",
-    title: "KRONOS ONLINE SHOP",
+    title: "KRONOS E-COMMERCE | DEMO",
     href: "https://vanta-black-kronos.vercel.app/",
     className: "item-3",
   },

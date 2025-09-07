@@ -41,13 +41,6 @@ export default function Intro() {
         </div>
 
         <div className={`container-links ${Ki.className}`}>
-          {/* <ul>
-            <li>2021 - PRESENT</li>
-            <li>WEB DEVELOPER</li>
-            <li>WEB GRAPHIC DESIGNER</li>
-            <li>AVAILABLE FOR WORK</li>
-            <li>BASED IN ITALY, TREVISO</li>
-          </ul> */}
           <p>
             Multidisciplinary creator with 2+ years' experience developing
             digital experiences that merge technology, design, and strategic
@@ -81,11 +74,7 @@ export default function Intro() {
               </a>
             </li>
             <li>
-              <a
-                className="link-btn"
-                href="/cv/CV ALLUSHAJ SERGIO.pdf"
-                download
-              >
+              <a className="link-btn" href="/cv/AllushajSergioITA.pdf" download>
                 <span style={{ fontSize: "1.6rem" }}>&#8600;</span> DOWNLOAD CV
                 [ITA]
               </a>

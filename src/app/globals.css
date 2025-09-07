@@ -105,6 +105,10 @@ a {
   color: rgba(255, 255, 255, 0.45);
 }
 
+ul {
+  gap: 0px !important;
+}
+
 li {
   list-style: none;
 }
@@ -241,7 +245,6 @@ li {
 .links {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 /* SERVICES STYLING */
@@ -396,8 +399,8 @@ li {
 #projects .section-title,
 #services .section-title {
   padding: 0 15px;
-  margin-bottom: 50px;
-  padding-top: 40px;
+  margin-bottom: 25px;
+  padding-top: 20px;
   border-top: 1px solid white;
 }
 
