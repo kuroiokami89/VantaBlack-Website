@@ -18,6 +18,12 @@ export const PhotoList = [
     location: "Paris, France",
   },
   {
+    url: "/foto/21.png",
+    description: "A portrait of a woman.",
+    device: "Nikon",
+    location: "Paris, France",
+  },
+  {
     url: "/foto/8.png",
     description: "A portrait of a woman.",
     device: "Nikon",
