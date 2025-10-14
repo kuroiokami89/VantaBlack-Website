@@ -115,7 +115,7 @@ a,
   }
 
   .intro-container p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   #footer .section-title a {
@@ -171,6 +171,11 @@ a,
 }
 
 @media screen and (max-width: 768px) {
+  ul {
+    font-size: 1rem !important;
+    margin-left: 10px;
+  }
+
   .title {
     font-size: 2.43rem !important;
     line-height: 50px;
@@ -191,7 +196,7 @@ a,
   }
 
   h2 {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
     line-height: 0.95;
   }
 

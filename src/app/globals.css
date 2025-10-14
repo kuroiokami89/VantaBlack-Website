@@ -250,21 +250,127 @@ li {
 /* SERVICES STYLING */
 .skill-1 {
   background-image: url("/skills/front-end.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-bottom: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .skill-2 {
-  background-image: url("/skills/ux-ui.jpg");
+  background-image: url("/skills/graphic.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-right: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .skill-3 {
-  background-image: url("/skills/video-editing.jpg");
+  background-image: url("/skills/ux-ui.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-right: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .skill-4 {
-  background-image: url("/skills/graphic.jpeg");
+  background-image: url("/skills/photography.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.skill-5 {
+  background-image: url("/skills/video-editing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.skill-6 {
+  background-image: url("/skills/marketing.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.skills-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+:root {
+  --skilla-border: rgba(255, 255, 255, 0.25);
+  --skilla-muted: rgba(255, 255, 255, 0.25);
+  --skilla-strong: #ffffff;
+  --skilla-height: 125px;
+  --skilla-padding-y: 20px;
+}
+
+/* Container */
+.skilla {
+  display: grid;
+  grid-template-columns: 10% 25% 40% 1fr; /* matches your original 20/10/40 + a flexible column */
+  height: 150px;
+  color: var(--skilla-muted);
+  border-bottom: 1px solid var(--skilla-border);
+  transition: color 1s ease;
+  box-sizing: border-box;
+  align-items: top;
+}
+
+/* hover color */
+.skilla:hover {
+  color: var(--skilla-strong);
+  cursor: crosshair;
+
+  .skill-1,
+  .skill-2,
+  .skill-3,
+  .skill-4,
+  .skill-5,
+  .skill-6 {
+    display: block;
+    opacity: 1;
+  }
+}
+
+/* shared child spacing + borders */
+.skilla > * {
+  padding: 0 1rem;
+  margin: 0; /* reset defaults like <h3>, <p> margins */
+  padding-top: 20px;
+}
+
+/* right border for all except the last child */
+.skilla > *:not(:last-child) {
+  border-right: 1px solid var(--skilla-border);
+}
+
+/* typography */
+.skilla h3 {
+  font-size: 1.7rem !important;
+}
+
+.skilla span {
+  font-size: 1.35rem !important;
+  display: inline-block;
+  text-align: left;
+}
+
+.skilla p {
+  font-size: 1.1rem;
+  line-height: 1.2;
 }
 
 /* GALLERY STYLING */
@@ -275,7 +381,7 @@ li {
 }
 
 .gallery-paragraph {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   padding: 15px;
 }
 
@@ -308,7 +414,7 @@ li {
 
 #gallery {
   margin-bottom: 25px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   position: relative;
 }
 
@@ -401,22 +507,22 @@ li {
   padding: 0 15px;
   margin-bottom: 25px;
   padding-top: 20px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 #services {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .project-item,
 .skill {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 550px;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -496,7 +602,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 100px 15px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   margin-bottom: 25px;
 }
 
