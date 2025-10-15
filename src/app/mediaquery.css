@@ -59,7 +59,7 @@
   #projects .section-title,
   #services .section-title {
     padding: 0 15px;
-    padding-top: 30px;
+    padding-top: 10px;
     margin-bottom: 10px;
   }
 
@@ -77,10 +77,6 @@
   #email {
     padding: 70px 15px !important;
   }
-
-  /* .me-img {
-    background-size: contain;
-  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -295,8 +291,7 @@
     padding: 15px;
   }
 
-  .project-item,
-  .skill {
+  .project-item {
     height: 400px;
   }
 
@@ -311,32 +306,45 @@
     margin-bottom: 10px;
   }
 
-  .skilla {
+  .service {
+    opacity: 1;
+  }
+
+  .project-item,
+  .service {
+    color: white;
+  }
+
+  .service {
     grid-template-columns: 1fr;
     height: auto;
   }
 
-  .skilla > * {
+  .service > * {
     padding: 0.5rem 1rem;
   }
 
-  .skilla > *:not(:last-child) {
+  .service > *:not(:last-child) {
     border-right: none;
-    border-bottom: 1px solid var(--skilla-border);
+    border-bottom: 1px solid var(--service-border);
   }
 
-  .skill-img {
+  .service-img {
     height: 150px;
   }
 
-  .skill-1,
-  .skill-2,
-  .skill-3,
-  .skill-4,
-  .skill-5,
-  .skill-6 {
+  .service {
+    opacity: 1;
+  }
+
+  .service-1,
+  .service-2,
+  .service-3,
+  .service-4,
+  .service-5,
+  .service-6 {
     display: block;
-    opacity: 0.2;
+    opacity: 1;
   }
 }
 

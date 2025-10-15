@@ -1,13 +1,13 @@
-import { OrbitronLight, Kusanagi, Ki } from "./fonts";
+import { OrbitronLight, Ki } from "./fonts";
 
 export default function Services() {
   return (
     <div id="services" className={`${OrbitronLight.className}`}>
       <div className="section-title">
-        <h2 className={`${OrbitronLight.className}`}>MY SKILLS</h2>
+        <h2 className={`${OrbitronLight.className}`}>SERVICES</h2>
       </div>
-      <div className={`skills-list ${Ki.className}`}>
-        <div className="skilla">
+      <div className={`services-list ${Ki.className}`}>
+        <div className="service">
           <span>[01]</span>
           <h3>WEB DEVELOPMENT</h3>
           <p>
@@ -15,40 +15,40 @@ export default function Services() {
             React/Next.js). Focus on accessibility, maintainable code and fast
             user experiences.
           </p>
-          <div className="skill-img skill-1"></div>
+          <div className="service-img service-1"></div>
         </div>
 
-        <div className="skilla">
+        <div className="service">
           <span>[02]</span>
           <h3>GRAPHIC DESIGN</h3>
           <p>
             Visual identity, logos and layouts for print & digital — strong
             typography, color and composition to communicate your brand.
           </p>
-          <div className="skill-img skill-2"></div>
+          <div className="service-img service-2"></div>
         </div>
 
-        <div className="skilla">
+        <div className="service">
           <span>[03]</span>
           <h3>UX/UI DESIGN</h3>
           <p>
             Wireframes, prototypes and interface design driven by user research
             — clear flows, usable interactions and polished UI components.
           </p>
-          <div className="skill-img skill-3"></div>
+          <div className="service-img service-3"></div>
         </div>
 
-        <div className="skilla">
+        <div className="service">
           <span>[04]</span>
           <h3>PHOTOGRAPHY AND VIDEOMAKING</h3>
           <p>
             Photo and video production: framing, lighting and editing to tell
             stories that work across web and social platforms.
           </p>
-          <div className="skill-img skill-4"></div>
+          <div className="service-img service-4"></div>
         </div>
 
-        <div className="skilla">
+        <div className="service">
           <span>[05]</span>
           <h3>VIDEO AND MOTION DESIGN</h3>
           <p>
@@ -56,9 +56,9 @@ export default function Services() {
             typography) to enhance storytelling and add polish to digital
             projects.
           </p>
-          <div className="skill-img skill-5"></div>
+          <div className="service-img service-5"></div>
         </div>
-        <div className="skilla">
+        <div className="service">
           <span>[06]</span>
           <h3>MARKETING & ANALYTICS</h3>
           <p>
@@ -67,7 +67,7 @@ export default function Services() {
             improvements that align content and technical changes with business
             goals.
           </p>
-          <div className="skill-img skill-6"></div>
+          <div className="service-img service-6"></div>
         </div>
       </div>
     </div>

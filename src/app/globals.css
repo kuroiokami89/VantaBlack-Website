@@ -102,7 +102,7 @@ a {
 }
 
 .link-btn:hover {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.25);
 }
 
 ul {
@@ -196,7 +196,7 @@ li {
 }
 
 .copywright {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.25);
   margin-bottom: 20px !important;
 }
 
@@ -248,129 +248,90 @@ li {
 }
 
 /* SERVICES STYLING */
-.skill-1 {
+:root {
+  --service-border: rgba(255, 255, 255, 0.25);
+  --service-muted: rgba(255, 255, 255, 0.25);
+  --service-strong: #ffffff;
+  --service-height: 125px;
+  --service-padding-y: 20px;
+}
+
+.service-1,
+.service-2,
+.service-3,
+.service-4,
+.service-5,
+.service-6 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.service-1 {
   background-image: url("/skills/front-end.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   border-bottom: 0;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
-
-.skill-2 {
+.service-2 {
   background-image: url("/skills/graphic.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   border-right: 0;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
-
-.skill-3 {
+.service-3 {
   background-image: url("/skills/ux-ui.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   border-right: 0;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
-
-.skill-4 {
+.service-4 {
   background-image: url("/skills/photography.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
-
-.skill-5 {
+.service-5 {
   background-image: url("/skills/video-editing.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
-
-.skill-6 {
+.service-6 {
   background-image: url("/skills/marketing.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
 
-.skills-list {
+.services-list {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-:root {
-  --skilla-border: rgba(255, 255, 255, 0.25);
-  --skilla-muted: rgba(255, 255, 255, 0.25);
-  --skilla-strong: #ffffff;
-  --skilla-height: 125px;
-  --skilla-padding-y: 20px;
-}
-
-/* Container */
-.skilla {
+.service {
   display: grid;
-  grid-template-columns: 10% 25% 40% 1fr; /* matches your original 20/10/40 + a flexible column */
+  grid-template-columns: 10% 25% 40% 1fr;
   height: 150px;
-  color: var(--skilla-muted);
-  border-bottom: 1px solid var(--skilla-border);
+  color: var(--service-muted);
+  border-bottom: 1px solid var(--service-border);
   transition: color 1s ease;
   box-sizing: border-box;
   align-items: top;
 }
 
-/* hover color */
-.skilla:hover {
-  color: var(--skilla-strong);
+.service:hover {
+  color: var(--service-strong);
   cursor: crosshair;
-
-  .skill-1,
-  .skill-2,
-  .skill-3,
-  .skill-4,
-  .skill-5,
-  .skill-6 {
-    display: block;
-    opacity: 1;
-  }
 }
 
-/* shared child spacing + borders */
-.skilla > * {
-  padding: 0 1rem;
-  margin: 0; /* reset defaults like <h3>, <p> margins */
-  padding-top: 20px;
+.service:hover .service-1,
+.service:hover .service-2,
+.service:hover .service-3,
+.service:hover .service-4,
+.service:hover .service-5,
+.service:hover .service-6 {
+  display: block;
+  opacity: 1;
 }
 
-/* right border for all except the last child */
-.skilla > *:not(:last-child) {
-  border-right: 1px solid var(--skilla-border);
+.service > * {
+  margin: 0;
+  padding: 20px 1rem 0;
 }
 
-/* typography */
-.skilla h3 {
-  font-size: 1.7rem !important;
+.service > *:not(:last-child) {
+  border-right: 1px solid var(--service-border);
 }
 
-.skilla span {
-  font-size: 1.35rem !important;
-  display: inline-block;
-  text-align: left;
-}
-
-.skilla p {
-  font-size: 1.1rem;
-  line-height: 1.2;
+.service > *:is(:last-child) {
+  border-bottom: 0 !important;
 }
 
 /* GALLERY STYLING */
@@ -496,12 +457,13 @@ li {
 }
 
 /* PROJECTS STYLING */
-#projects .container,
-.services-container {
+/* layout */
+#projects .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* section titles (shared) */
 #projects .section-title,
 #services .section-title {
   padding: 0 15px;
@@ -510,29 +472,21 @@ li {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-#services {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.project-item,
-.skill {
+/* project item base (shared rules kept intact) */
+.project-item {
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 550px;
-  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.skill {
-  flex-direction: column-reverse;
+  color: rgba(255, 255, 255, 0.25);
+  transition: all 1s ease;
 }
 
 .spans {
@@ -541,21 +495,18 @@ li {
   justify-content: space-between;
 }
 
-.project-item:nth-child(odd),
-.skill:nth-child(odd) {
+.project-item:nth-child(odd) {
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
 }
 
-.project-item:nth-child(even),
-.skill:nth-child(even) {
+.project-item:nth-child(even) {
   border-right: 0;
   border-bottom: 0;
 }
 
-.project-item::before,
-.skill::before {
+.project-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -564,17 +515,19 @@ li {
   height: 100%;
   background-color: rgba(0, 0, 0, 1);
   z-index: 0;
-  transition: opacity 0.6s ease-in;
+  transition: opacity 1s ease-in, color 1s ease-in;
 }
 
-.project-item:hover::before,
-.skill:hover::before {
+.project-item:hover::before {
   opacity: 0.65;
 }
 
+.project-item:hover {
+  color: white;
+}
+
 .project-item h3,
-.project-item span,
-.skill h3 {
+.project-item span {
   position: relative;
   z-index: 1;
 }
@@ -582,15 +535,12 @@ li {
 .item-1 {
   background-image: url("/projects/VantaBlack-OLD.gif");
 }
-
 .item-3 {
   background-image: url("/projects/Kronos.gif");
 }
-
 .item-4 {
   background-image: url("/foto/14.svg");
 }
-
 .item-2 {
   background-image: url("/foto/18.png");
 }

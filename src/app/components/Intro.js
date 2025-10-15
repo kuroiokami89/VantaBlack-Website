@@ -43,7 +43,7 @@ export default function Intro() {
         <div className={`container-links ${Ki.className}`}>
           <p>
             Multidisciplinary creator with 2+ years' experience developing
-            digital experiences that merge technology, design, and strategic
+            digital solutions that merge technology, design, and strategic
             communication.
           </p>
           <ul className="links">
@@ -60,11 +60,21 @@ export default function Intro() {
             <li>
               <a
                 className="link-btn"
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/sergioallushaj/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span style={{ fontSize: "1.6rem" }}>&#8600;</span> LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a
+                className="link-btn"
+                href="https://www.instagram.com/vantablack1999/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ fontSize: "1.6rem" }}>&#8600;</span> INSTAGRAM
               </a>
             </li>
             <li>
