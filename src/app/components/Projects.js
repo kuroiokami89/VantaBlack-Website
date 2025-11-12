@@ -43,6 +43,7 @@ export default function Projects() {
             key={index}
             href={project.href}
             className={`project-item ${project.className}`}
+            target="_blank"
           >
             <div className={`spans ${Ki.className}`}>
               <span>{project.year}</span>

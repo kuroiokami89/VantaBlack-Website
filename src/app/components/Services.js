@@ -58,17 +58,6 @@ export default function Services() {
           </p>
           <div className="service-img service-5"></div>
         </div>
-        <div className="service">
-          <span>[06]</span>
-          <h3>MARKETING & ANALYTICS</h3>
-          <p>
-            SEO and analytics to increase visibility and measure results. Setup
-            and optimization with Google Analytics, on-page SEO and data-driven
-            improvements that align content and technical changes with business
-            goals.
-          </p>
-          <div className="service-img service-6"></div>
-        </div>
       </div>
     </div>
   );

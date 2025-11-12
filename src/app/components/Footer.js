@@ -10,10 +10,15 @@ export default function Footer() {
           <a
             className="link-btn"
             href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
+            target="_blank"
           >
             LINKEDIN
           </a>
-          <a className="link-btn link" href="https://github.com/kuroiokami89">
+          <a
+            className="link-btn link"
+            href="https://github.com/kuroiokami89"
+            target="_blank"
+          >
             GITHUB
           </a>
           <a className="link-btn link" href="#top">
