@@ -78,13 +78,13 @@ export default function Intro() {
               </a>
             </li>
             <li>
-              <a className="link-btn" href="/cv/AllushajSergio.pdf" download>
+              <a className="link-btn" href="/cv/AllushajSergioENG.pdf" download>
                 <span style={{ fontSize: "1.6rem" }}>&#8600;</span> DOWNLOAD CV
                 [ENG]
               </a>
             </li>
             <li>
-              <a className="link-btn" href="/cv/AllushajSergioITA.pdf" download>
+              <a className="link-btn" href="/cv/AllushajSergio.pdf" download>
                 <span style={{ fontSize: "1.6rem" }}>&#8600;</span> DOWNLOAD CV
                 [ITA]
               </a>
