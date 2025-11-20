@@ -1,4 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Website
+
+Welcome to my personal website! This is where I showcase my skills and share information about the projects I have developed.
+
+## About Me
+
+I am a passionate developer with a strong interest in [list your areas of expertise here]. I enjoy building innovative solutions that solve real-world problems and make a positive impact.
+
+## Projects
+
+On this website, you will find information about some of the projects I have worked on. These projects demonstrate my skills and experience in [list the technologies or frameworks you have used]. Each project includes a brief description, screenshots, and links to the source code.
+
+## Contact Me
+
+If you have any questions or would like to get in touch, please feel free to contact me at [your email address]. I look forward to hearing from you!
+
 
 ## Getting Started
 
