@@ -2,13 +2,9 @@
 
 Welcome to my personal website! This is where I showcase my skills and share information about the projects I have developed.
 
-## About Me
-
-I am a passionate developer with a strong interest in [list your areas of expertise here]. I enjoy building innovative solutions that solve real-world problems and make a positive impact.
-
 ## Projects
 
-On this website, you will find information about some of the projects I have worked on. These projects demonstrate my skills and experience in [list the technologies or frameworks you have used]. Each project includes a brief description, screenshots, and links to the source code.
+On this website, you will find information about some of the projects I have worked on. These projects demonstrate my skills and experience in Web Development and Graphic Design. Each project includes a brief description, screenshots, and links to the source code.
 
 ## Contact Me
 
