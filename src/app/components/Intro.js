@@ -42,9 +42,9 @@ export default function Intro() {
 
         <div className={`container-links ${Ki.className}`}>
           <p>
-            Multidisciplinary creator with 2+ years' experience developing
-            digital solutions that merge technology, design, and strategic
-            communication.
+            Full-stack developer based in Treviso, Italy. I build web
+            applications that combine clean code with thoughtful design.
+            Currently specializing in .NET and React development.
           </p>
           <ul className="links">
             <li>

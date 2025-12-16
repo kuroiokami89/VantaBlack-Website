@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div id="services" className={`${OrbitronLight.className}`}>
       <div className="section-title">
-        <h2 className={`${OrbitronLight.className}`}>SERVICES</h2>
+        <h2 className={`${OrbitronLight.className}`}>SKILLS</h2>
       </div>
       <div className={`services-list ${Ki.className}`}>
         <div className="service">
@@ -20,22 +20,22 @@ export default function Services() {
 
         <div className="service">
           <span>[02]</span>
-          <h3>GRAPHIC DESIGN</h3>
-          <p>
-            Visual identity, logos and layouts for print & digital — strong
-            typography, color and composition to communicate your brand.
-          </p>
-          <div className="service-img service-2"></div>
-        </div>
-
-        <div className="service">
-          <span>[03]</span>
           <h3>UX/UI DESIGN</h3>
           <p>
             Wireframes, prototypes and interface design driven by user research
             — clear flows, usable interactions and polished UI components.
           </p>
           <div className="service-img service-3"></div>
+        </div>
+
+        <div className="service">
+          <span>[03]</span>
+          <h3>GRAPHIC DESIGN</h3>
+          <p>
+            Visual identity, logos and layouts for print & digital — strong
+            typography, color and composition to communicate your brand.
+          </p>
+          <div className="service-img service-2"></div>
         </div>
 
         <div className="service">
@@ -47,8 +47,7 @@ export default function Services() {
           </p>
           <div className="service-img service-4"></div>
         </div>
-
-        <div className="service">
+        {/* <div className="service">
           <span>[05]</span>
           <h3>VIDEO AND MOTION DESIGN</h3>
           <p>
@@ -57,7 +56,7 @@ export default function Services() {
             projects.
           </p>
           <div className="service-img service-5"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
