@@ -1,0 +1,167 @@
+* {
+  cursor: none !important;
+}
+
+.cursor-square {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+}
+
+.cursor-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.line {
+  position: absolute;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.line-top {
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 6px;
+}
+
+.line-right {
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 1px;
+}
+
+.line-bottom {
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 6px;
+}
+
+.line-left {
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 1px;
+}
+
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeInText 0.2s ease forwards;
+  pointer-events: none;
+  text-align: center;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover state - regular */
+.cursor-square.hovering {
+  width: 40px;
+  height: 40px;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.cursor-square.hovering .cursor-dot {
+  width: 6px;
+  height: 6px;
+}
+
+.cursor-square.hovering .line {
+  opacity: 1;
+}
+
+.cursor-square.hovering .line-top,
+.cursor-square.hovering .line-bottom {
+  height: 10px;
+}
+
+.cursor-square.hovering .line-left,
+.cursor-square.hovering .line-right {
+  width: 10px;
+}
+
+.cursor-square.hovering .line-top {
+  top: -12px;
+}
+
+.cursor-square.hovering .line-right {
+  right: -12px;
+}
+
+.cursor-square.hovering .line-bottom {
+  bottom: -12px;
+}
+
+.cursor-square.hovering .line-left {
+  left: -12px;
+}
+
+/* Show text state - for project items */
+.cursor-square.show-text {
+  width: 190px;
+  height: 65px;
+  border-color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 4px;
+}
+
+.cursor-square.show-text .cursor-dot {
+  opacity: 0;
+}
+
+.cursor-square.show-text .line {
+  opacity: 0;
+}
+
+/* Hide on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-square {
+    display: none;
+  }
+
+  * {
+    cursor: auto !important;
+  }
+}

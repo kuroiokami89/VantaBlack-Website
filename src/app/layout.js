@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import "./globals.css";
 import "./mediaquery.css";
+import "./components/cursor.css";
 import "./fonts.css";
 import "./vb-font.css";
 import HeadComponent from "./components/HeadComponent";
@@ -10,6 +11,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Email from "./components/EmailComponent";
 import LoadingVideo from "./components/LoadingVideo";
+import CustomCursor from "./components/CustomCursor";
 
 export default function RootLayout({ children }) {
   const [loading, setLoading] = useState(true);
@@ -42,6 +44,7 @@ export default function RootLayout({ children }) {
         )} */}
         <>
           <Header />
+          <CustomCursor />
           <main>{children}</main>
           <Email />
           <Footer />
