@@ -67,7 +67,7 @@ export default function Intro() {
                 <span style={{ fontSize: "1.6rem" }}>&#8600;</span> LINKEDIN
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 className="link-btn"
                 href="https://www.instagram.com/vantablack1999/"
@@ -76,7 +76,7 @@ export default function Intro() {
               >
                 <span style={{ fontSize: "1.6rem" }}>&#8600;</span> INSTAGRAM
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 className="link-btn"
